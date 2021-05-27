@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/emnet/Desktop/Robotics/arm_ws/src/arm_gazebo/src/controller.cpp
+/home/ubuntu/arm_ws/src/arm_gazebo/src/controller.cpp
 functional
 -
 gazebo/gazebo.hh
@@ -7211,6 +7211,8 @@ ignition/math/Cylinder.hh
 -
 ignition/math/DiffDriveOdometry.hh
 -
+ignition/math/Ellipsoid.hh
+-
 ignition/math/Filter.hh
 -
 ignition/math/Frustum.hh
@@ -7258,6 +7260,8 @@ ignition/math/RotationSpline.hh
 ignition/math/SemanticVersion.hh
 -
 ignition/math/SignalStats.hh
+-
+ignition/math/SpeedLimiter.hh
 -
 ignition/math/Sphere.hh
 -
@@ -7363,6 +7367,16 @@ ignition/math/Export.hh
 -
 ignition/math/config.hh
 -
+
+/usr/include/ignition/math6/ignition/math/Ellipsoid.hh
+optional
+-
+ignition/math/MassMatrix3.hh
+/usr/include/ignition/math6/ignition/math/ignition/math/MassMatrix3.hh
+ignition/math/Material.hh
+/usr/include/ignition/math6/ignition/math/ignition/math/Material.hh
+ignition/math/detail/Ellipsoid.hh
+/usr/include/ignition/math6/ignition/math/ignition/math/detail/Ellipsoid.hh
 
 /usr/include/ignition/math6/ignition/math/Export.hh
 ignition/math/detail/Export.hh
@@ -7654,6 +7668,16 @@ ignition/math/Helpers.hh
 ignition/math/config.hh
 -
 
+/usr/include/ignition/math6/ignition/math/SpeedLimiter.hh
+chrono
+-
+memory
+-
+ignition/math/config.hh
+-
+ignition/math/Helpers.hh
+/usr/include/ignition/math6/ignition/math/ignition/math/Helpers.hh
+
 /usr/include/ignition/math6/ignition/math/Sphere.hh
 ignition/math/MassMatrix3.hh
 /usr/include/ignition/math6/ignition/math/ignition/math/MassMatrix3.hh
@@ -7789,6 +7813,16 @@ ignition/math/Inertial.hh
 -
 
 /usr/include/ignition/math6/ignition/math/detail/Cylinder.hh
+
+/usr/include/ignition/math6/ignition/math/detail/Ellipsoid.hh
+limits
+-
+optional
+-
+ignition/math/Helpers.hh
+-
+ignition/math/Inertial.hh
+-
 
 /usr/include/ignition/math6/ignition/math/detail/Export.hh
 

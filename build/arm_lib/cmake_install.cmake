@@ -1,8 +1,8 @@
-# Install script for directory: /home/emnet/Desktop/Robotics/arm_ws/src/arm_lib
+# Install script for directory: /home/ubuntu/arm_ws/src/arm_lib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/emnet/Desktop/Robotics/arm_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ubuntu/arm_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/emnet/Desktop/Robotics/arm_ws/build/arm_lib/catkin_generated/installspace/arm_lib.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ubuntu/arm_ws/build/arm_lib/catkin_generated/installspace/arm_lib.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/arm_lib/cmake" TYPE FILE FILES
-    "/home/emnet/Desktop/Robotics/arm_ws/build/arm_lib/catkin_generated/installspace/arm_libConfig.cmake"
-    "/home/emnet/Desktop/Robotics/arm_ws/build/arm_lib/catkin_generated/installspace/arm_libConfig-version.cmake"
+    "/home/ubuntu/arm_ws/build/arm_lib/catkin_generated/installspace/arm_libConfig.cmake"
+    "/home/ubuntu/arm_ws/build/arm_lib/catkin_generated/installspace/arm_libConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/arm_lib" TYPE FILE FILES "/home/emnet/Desktop/Robotics/arm_ws/src/arm_lib/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/arm_lib" TYPE FILE FILES "/home/ubuntu/arm_ws/src/arm_lib/package.xml")
 endif()
 

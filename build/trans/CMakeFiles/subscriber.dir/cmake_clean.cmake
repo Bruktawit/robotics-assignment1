@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/emnet/Desktop/Robotics/arm_ws/devel/lib/trans/subscriber"
-  "/home/emnet/Desktop/Robotics/arm_ws/devel/lib/trans/subscriber.pdb"
+  "/home/ubuntu/arm_ws/devel/lib/trans/subscriber"
+  "/home/ubuntu/arm_ws/devel/lib/trans/subscriber.pdb"
   "CMakeFiles/subscriber.dir/src/subscriber.cpp.o"
 )
 

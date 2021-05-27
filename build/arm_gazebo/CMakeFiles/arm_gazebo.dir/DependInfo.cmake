@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/emnet/Desktop/Robotics/arm_ws/src/arm_gazebo/src/controller.cpp" "/home/emnet/Desktop/Robotics/arm_ws/build/arm_gazebo/CMakeFiles/arm_gazebo.dir/src/controller.cpp.o"
+  "/home/ubuntu/arm_ws/src/arm_gazebo/src/controller.cpp" "/home/ubuntu/arm_ws/build/arm_gazebo/CMakeFiles/arm_gazebo.dir/src/controller.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

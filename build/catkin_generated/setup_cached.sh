@@ -7,10 +7,6 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/emnet/Desktop/Robotics/arm_ws/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/emnet/Desktop/Robotics/arm_ws/devel/lib:$LD_LIBRARY_PATH"
-export PKG_CONFIG_PATH="/home/emnet/Desktop/Robotics/arm_ws/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
-export PWD='/home/emnet/Desktop/Robotics/arm_ws/build'
-export PYTHONPATH="/home/emnet/Desktop/Robotics/arm_ws/devel/lib/python3/dist-packages:$PYTHONPATH"
-export ROSLISP_PACKAGE_DIRECTORIES='/home/emnet/Desktop/Robotics/arm_ws/devel/share/common-lisp'
-export ROS_PACKAGE_PATH="/home/emnet/Desktop/Robotics/arm_ws/src:$ROS_PACKAGE_PATH"
+export LD_LIBRARY_PATH='/opt/ros/noetic/lib'
+export PKG_CONFIG_PATH='/opt/ros/noetic/lib/pkgconfig'
+export PWD='/home/ubuntu/arm_ws/build'

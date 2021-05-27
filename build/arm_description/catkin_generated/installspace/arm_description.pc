@@ -1,4 +1,4 @@
-prefix=/home/emnet/Desktop/Robotics/arm_ws/install
+prefix=/home/ubuntu/arm_ws/install
 
 Name: arm_description
 Description: Description of arm_description

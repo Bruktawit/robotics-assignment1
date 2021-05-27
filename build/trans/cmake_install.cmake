@@ -1,8 +1,8 @@
-# Install script for directory: /home/emnet/Desktop/Robotics/arm_ws/src/trans
+# Install script for directory: /home/ubuntu/arm_ws/src/trans
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/emnet/Desktop/Robotics/arm_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ubuntu/arm_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,55 +39,55 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/trans/msg" TYPE FILE FILES
-    "/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/position_angle_distance.msg"
-    "/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/out_position_angle_distance.msg"
+    "/home/ubuntu/arm_ws/src/trans/msg/position_angle_distance.msg"
+    "/home/ubuntu/arm_ws/src/trans/msg/out_position_angle_distance.msg"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/trans/cmake" TYPE FILE FILES "/home/emnet/Desktop/Robotics/arm_ws/build/trans/catkin_generated/installspace/trans-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/trans/cmake" TYPE FILE FILES "/home/ubuntu/arm_ws/build/trans/catkin_generated/installspace/trans-msg-paths.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/emnet/Desktop/Robotics/arm_ws/devel/include/trans")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/ubuntu/arm_ws/devel/include/trans")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/emnet/Desktop/Robotics/arm_ws/devel/share/roseus/ros/trans")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/ubuntu/arm_ws/devel/share/roseus/ros/trans")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/emnet/Desktop/Robotics/arm_ws/devel/share/common-lisp/ros/trans")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/ubuntu/arm_ws/devel/share/common-lisp/ros/trans")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/emnet/Desktop/Robotics/arm_ws/devel/share/gennodejs/ros/trans")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/ubuntu/arm_ws/devel/share/gennodejs/ros/trans")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/emnet/Desktop/Robotics/arm_ws/devel/lib/python3/dist-packages/trans")
+  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/ubuntu/arm_ws/devel/lib/python3/dist-packages/trans")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/emnet/Desktop/Robotics/arm_ws/devel/lib/python3/dist-packages/trans")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/ubuntu/arm_ws/devel/lib/python3/dist-packages/trans")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/emnet/Desktop/Robotics/arm_ws/build/trans/catkin_generated/installspace/trans.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ubuntu/arm_ws/build/trans/catkin_generated/installspace/trans.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/trans/cmake" TYPE FILE FILES "/home/emnet/Desktop/Robotics/arm_ws/build/trans/catkin_generated/installspace/trans-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/trans/cmake" TYPE FILE FILES "/home/ubuntu/arm_ws/build/trans/catkin_generated/installspace/trans-msg-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/trans/cmake" TYPE FILE FILES
-    "/home/emnet/Desktop/Robotics/arm_ws/build/trans/catkin_generated/installspace/transConfig.cmake"
-    "/home/emnet/Desktop/Robotics/arm_ws/build/trans/catkin_generated/installspace/transConfig-version.cmake"
+    "/home/ubuntu/arm_ws/build/trans/catkin_generated/installspace/transConfig.cmake"
+    "/home/ubuntu/arm_ws/build/trans/catkin_generated/installspace/transConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/trans" TYPE FILE FILES "/home/emnet/Desktop/Robotics/arm_ws/src/trans/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/trans" TYPE FILE FILES "/home/ubuntu/arm_ws/src/trans/package.xml")
 endif()
 

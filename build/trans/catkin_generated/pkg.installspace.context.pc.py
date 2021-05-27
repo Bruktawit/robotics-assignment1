@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include".split(';') if "${prefix}/i
 PROJECT_CATKIN_DEPENDS = "message_runtime;roscpp;std_msgs".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "trans"
-PROJECT_SPACE_DIR = "/home/emnet/Desktop/Robotics/arm_ws/install"
+PROJECT_SPACE_DIR = "/home/ubuntu/arm_ws/install"
 PROJECT_VERSION = "0.0.0"

@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "arm_lib"
-PROJECT_SPACE_DIR = "/home/emnet/Desktop/Robotics/arm_ws/devel"
+PROJECT_SPACE_DIR = "/home/ubuntu/arm_ws/devel"
 PROJECT_VERSION = "0.0.0"

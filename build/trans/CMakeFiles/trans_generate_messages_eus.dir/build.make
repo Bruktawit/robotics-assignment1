@@ -43,39 +43,39 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/emnet/Desktop/Robotics/arm_ws/src
+CMAKE_SOURCE_DIR = /home/ubuntu/arm_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/emnet/Desktop/Robotics/arm_ws/build
+CMAKE_BINARY_DIR = /home/ubuntu/arm_ws/build
 
 # Utility rule file for trans_generate_messages_eus.
 
 # Include the progress variables for this target.
 include trans/CMakeFiles/trans_generate_messages_eus.dir/progress.make
 
-trans/CMakeFiles/trans_generate_messages_eus: /home/emnet/Desktop/Robotics/arm_ws/devel/share/roseus/ros/trans/msg/position_angle_distance.l
-trans/CMakeFiles/trans_generate_messages_eus: /home/emnet/Desktop/Robotics/arm_ws/devel/share/roseus/ros/trans/msg/out_position_angle_distance.l
-trans/CMakeFiles/trans_generate_messages_eus: /home/emnet/Desktop/Robotics/arm_ws/devel/share/roseus/ros/trans/manifest.l
+trans/CMakeFiles/trans_generate_messages_eus: /home/ubuntu/arm_ws/devel/share/roseus/ros/trans/msg/position_angle_distance.l
+trans/CMakeFiles/trans_generate_messages_eus: /home/ubuntu/arm_ws/devel/share/roseus/ros/trans/msg/out_position_angle_distance.l
+trans/CMakeFiles/trans_generate_messages_eus: /home/ubuntu/arm_ws/devel/share/roseus/ros/trans/manifest.l
 
 
-/home/emnet/Desktop/Robotics/arm_ws/devel/share/roseus/ros/trans/msg/position_angle_distance.l: /opt/ros/noetic/lib/geneus/gen_eus.py
-/home/emnet/Desktop/Robotics/arm_ws/devel/share/roseus/ros/trans/msg/position_angle_distance.l: /home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/position_angle_distance.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/emnet/Desktop/Robotics/arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from trans/position_angle_distance.msg"
-	cd /home/emnet/Desktop/Robotics/arm_ws/build/trans && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/position_angle_distance.msg -Itrans:/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p trans -o /home/emnet/Desktop/Robotics/arm_ws/devel/share/roseus/ros/trans/msg
+/home/ubuntu/arm_ws/devel/share/roseus/ros/trans/msg/position_angle_distance.l: /opt/ros/noetic/lib/geneus/gen_eus.py
+/home/ubuntu/arm_ws/devel/share/roseus/ros/trans/msg/position_angle_distance.l: /home/ubuntu/arm_ws/src/trans/msg/position_angle_distance.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from trans/position_angle_distance.msg"
+	cd /home/ubuntu/arm_ws/build/trans && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/ubuntu/arm_ws/src/trans/msg/position_angle_distance.msg -Itrans:/home/ubuntu/arm_ws/src/trans/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p trans -o /home/ubuntu/arm_ws/devel/share/roseus/ros/trans/msg
 
-/home/emnet/Desktop/Robotics/arm_ws/devel/share/roseus/ros/trans/msg/out_position_angle_distance.l: /opt/ros/noetic/lib/geneus/gen_eus.py
-/home/emnet/Desktop/Robotics/arm_ws/devel/share/roseus/ros/trans/msg/out_position_angle_distance.l: /home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/out_position_angle_distance.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/emnet/Desktop/Robotics/arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from trans/out_position_angle_distance.msg"
-	cd /home/emnet/Desktop/Robotics/arm_ws/build/trans && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/out_position_angle_distance.msg -Itrans:/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p trans -o /home/emnet/Desktop/Robotics/arm_ws/devel/share/roseus/ros/trans/msg
+/home/ubuntu/arm_ws/devel/share/roseus/ros/trans/msg/out_position_angle_distance.l: /opt/ros/noetic/lib/geneus/gen_eus.py
+/home/ubuntu/arm_ws/devel/share/roseus/ros/trans/msg/out_position_angle_distance.l: /home/ubuntu/arm_ws/src/trans/msg/out_position_angle_distance.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from trans/out_position_angle_distance.msg"
+	cd /home/ubuntu/arm_ws/build/trans && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/ubuntu/arm_ws/src/trans/msg/out_position_angle_distance.msg -Itrans:/home/ubuntu/arm_ws/src/trans/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p trans -o /home/ubuntu/arm_ws/devel/share/roseus/ros/trans/msg
 
-/home/emnet/Desktop/Robotics/arm_ws/devel/share/roseus/ros/trans/manifest.l: /opt/ros/noetic/lib/geneus/gen_eus.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/emnet/Desktop/Robotics/arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp manifest code for trans"
-	cd /home/emnet/Desktop/Robotics/arm_ws/build/trans && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/emnet/Desktop/Robotics/arm_ws/devel/share/roseus/ros/trans trans std_msgs
+/home/ubuntu/arm_ws/devel/share/roseus/ros/trans/manifest.l: /opt/ros/noetic/lib/geneus/gen_eus.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp manifest code for trans"
+	cd /home/ubuntu/arm_ws/build/trans && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/ubuntu/arm_ws/devel/share/roseus/ros/trans trans std_msgs
 
 trans_generate_messages_eus: trans/CMakeFiles/trans_generate_messages_eus
-trans_generate_messages_eus: /home/emnet/Desktop/Robotics/arm_ws/devel/share/roseus/ros/trans/msg/position_angle_distance.l
-trans_generate_messages_eus: /home/emnet/Desktop/Robotics/arm_ws/devel/share/roseus/ros/trans/msg/out_position_angle_distance.l
-trans_generate_messages_eus: /home/emnet/Desktop/Robotics/arm_ws/devel/share/roseus/ros/trans/manifest.l
+trans_generate_messages_eus: /home/ubuntu/arm_ws/devel/share/roseus/ros/trans/msg/position_angle_distance.l
+trans_generate_messages_eus: /home/ubuntu/arm_ws/devel/share/roseus/ros/trans/msg/out_position_angle_distance.l
+trans_generate_messages_eus: /home/ubuntu/arm_ws/devel/share/roseus/ros/trans/manifest.l
 trans_generate_messages_eus: trans/CMakeFiles/trans_generate_messages_eus.dir/build.make
 
 .PHONY : trans_generate_messages_eus
@@ -86,10 +86,10 @@ trans/CMakeFiles/trans_generate_messages_eus.dir/build: trans_generate_messages_
 .PHONY : trans/CMakeFiles/trans_generate_messages_eus.dir/build
 
 trans/CMakeFiles/trans_generate_messages_eus.dir/clean:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build/trans && $(CMAKE_COMMAND) -P CMakeFiles/trans_generate_messages_eus.dir/cmake_clean.cmake
+	cd /home/ubuntu/arm_ws/build/trans && $(CMAKE_COMMAND) -P CMakeFiles/trans_generate_messages_eus.dir/cmake_clean.cmake
 .PHONY : trans/CMakeFiles/trans_generate_messages_eus.dir/clean
 
 trans/CMakeFiles/trans_generate_messages_eus.dir/depend:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/emnet/Desktop/Robotics/arm_ws/src /home/emnet/Desktop/Robotics/arm_ws/src/trans /home/emnet/Desktop/Robotics/arm_ws/build /home/emnet/Desktop/Robotics/arm_ws/build/trans /home/emnet/Desktop/Robotics/arm_ws/build/trans/CMakeFiles/trans_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/arm_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/arm_ws/src /home/ubuntu/arm_ws/src/trans /home/ubuntu/arm_ws/build /home/ubuntu/arm_ws/build/trans /home/ubuntu/arm_ws/build/trans/CMakeFiles/trans_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : trans/CMakeFiles/trans_generate_messages_eus.dir/depend
 

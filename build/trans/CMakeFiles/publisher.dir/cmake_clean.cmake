@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/emnet/Desktop/Robotics/arm_ws/devel/lib/trans/publisher"
-  "/home/emnet/Desktop/Robotics/arm_ws/devel/lib/trans/publisher.pdb"
+  "/home/ubuntu/arm_ws/devel/lib/trans/publisher"
+  "/home/ubuntu/arm_ws/devel/lib/trans/publisher.pdb"
   "CMakeFiles/publisher.dir/src/publisher.cpp.o"
 )
 

@@ -41,9 +41,9 @@ void chatterCallback(const trans::position_angle_distance::ConstPtr& msg)
 {
   trans::out_position_angle_distance result = rotate_then_translate(msg);
 
-  ROS_INFO("X: [%lf]",msg->x);
-  ROS_INFO("Y: [%lf]",msg->y);
-  ROS_INFO("Z: [%lf]",msg->z);
+  ROS_INFO("X: [%lf]",result.x);
+  ROS_INFO("Y: [%lf]",result.y);
+  ROS_INFO("Z: [%lf]",result.z);
 }
 
 

@@ -67,14 +67,14 @@ set(arm_gazebo_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(arm_gazebo_SOURCE_PREFIX /home/emnet/Desktop/Robotics/arm_ws/src/arm_gazebo)
-  set(arm_gazebo_DEVEL_PREFIX /home/emnet/Desktop/Robotics/arm_ws/devel)
+  set(arm_gazebo_SOURCE_PREFIX /home/ubuntu/arm_ws/src/arm_gazebo)
+  set(arm_gazebo_DEVEL_PREFIX /home/ubuntu/arm_ws/devel)
   set(arm_gazebo_INSTALL_PREFIX "")
   set(arm_gazebo_PREFIX ${arm_gazebo_DEVEL_PREFIX})
 else()
   set(arm_gazebo_SOURCE_PREFIX "")
   set(arm_gazebo_DEVEL_PREFIX "")
-  set(arm_gazebo_INSTALL_PREFIX /home/emnet/Desktop/Robotics/arm_ws/install)
+  set(arm_gazebo_INSTALL_PREFIX /home/ubuntu/arm_ws/install)
   set(arm_gazebo_PREFIX ${arm_gazebo_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/emnet/Desktop/Robotics/arm_ws/install/lib;/opt/ros/noetic/lib)
+    foreach(path /home/ubuntu/arm_ws/install/lib;/home/ubuntu/arm_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -211,7 +211,7 @@ foreach(depend ${depends})
   _unpack_libraries_with_build_configuration(arm_gazebo_LIBRARIES ${arm_gazebo_LIBRARIES})
 
   _list_append_unique(arm_gazebo_LIBRARY_DIRS ${${arm_gazebo_dep}_LIBRARY_DIRS})
-  list(APPEND arm_gazebo_EXPORTED_TARGETS ${${arm_gazebo_dep}_EXPORTED_TARGETS})
+  _list_append_deduplicate(arm_gazebo_EXPORTED_TARGETS ${${arm_gazebo_dep}_EXPORTED_TARGETS})
 endforeach()
 
 set(pkg_cfg_extras "")

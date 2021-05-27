@@ -1,4 +1,4 @@
-prefix=/home/emnet/Desktop/Robotics/arm_ws/devel
+prefix=/home/ubuntu/arm_ws/devel
 
 Name: arm_lib
 Description: Description of arm_lib

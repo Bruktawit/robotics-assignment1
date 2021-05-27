@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/emnet/Desktop/Robotics/arm_ws/src
+CMAKE_SOURCE_DIR = /home/ubuntu/arm_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/emnet/Desktop/Robotics/arm_ws/build
+CMAKE_BINARY_DIR = /home/ubuntu/arm_ws/build
 
 # Utility rule file for tf2_msgs_generate_messages_eus.
 
@@ -63,10 +63,10 @@ arm_gazebo/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build: tf2_msgs_generat
 .PHONY : arm_gazebo/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build
 
 arm_gazebo/CMakeFiles/tf2_msgs_generate_messages_eus.dir/clean:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build/arm_gazebo && $(CMAKE_COMMAND) -P CMakeFiles/tf2_msgs_generate_messages_eus.dir/cmake_clean.cmake
+	cd /home/ubuntu/arm_ws/build/arm_gazebo && $(CMAKE_COMMAND) -P CMakeFiles/tf2_msgs_generate_messages_eus.dir/cmake_clean.cmake
 .PHONY : arm_gazebo/CMakeFiles/tf2_msgs_generate_messages_eus.dir/clean
 
 arm_gazebo/CMakeFiles/tf2_msgs_generate_messages_eus.dir/depend:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/emnet/Desktop/Robotics/arm_ws/src /home/emnet/Desktop/Robotics/arm_ws/src/arm_gazebo /home/emnet/Desktop/Robotics/arm_ws/build /home/emnet/Desktop/Robotics/arm_ws/build/arm_gazebo /home/emnet/Desktop/Robotics/arm_ws/build/arm_gazebo/CMakeFiles/tf2_msgs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/arm_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/arm_ws/src /home/ubuntu/arm_ws/src/arm_gazebo /home/ubuntu/arm_ws/build /home/ubuntu/arm_ws/build/arm_gazebo /home/ubuntu/arm_ws/build/arm_gazebo/CMakeFiles/tf2_msgs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : arm_gazebo/CMakeFiles/tf2_msgs_generate_messages_eus.dir/depend
 

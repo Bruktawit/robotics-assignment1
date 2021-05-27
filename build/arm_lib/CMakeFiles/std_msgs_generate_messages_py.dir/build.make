@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/emnet/Desktop/Robotics/arm_ws/src
+CMAKE_SOURCE_DIR = /home/ubuntu/arm_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/emnet/Desktop/Robotics/arm_ws/build
+CMAKE_BINARY_DIR = /home/ubuntu/arm_ws/build
 
 # Utility rule file for std_msgs_generate_messages_py.
 
@@ -63,10 +63,10 @@ arm_lib/CMakeFiles/std_msgs_generate_messages_py.dir/build: std_msgs_generate_me
 .PHONY : arm_lib/CMakeFiles/std_msgs_generate_messages_py.dir/build
 
 arm_lib/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build/arm_lib && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/ubuntu/arm_ws/build/arm_lib && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : arm_lib/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 
 arm_lib/CMakeFiles/std_msgs_generate_messages_py.dir/depend:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/emnet/Desktop/Robotics/arm_ws/src /home/emnet/Desktop/Robotics/arm_ws/src/arm_lib /home/emnet/Desktop/Robotics/arm_ws/build /home/emnet/Desktop/Robotics/arm_ws/build/arm_lib /home/emnet/Desktop/Robotics/arm_ws/build/arm_lib/CMakeFiles/std_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/arm_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/arm_ws/src /home/ubuntu/arm_ws/src/arm_lib /home/ubuntu/arm_ws/build /home/ubuntu/arm_ws/build/arm_lib /home/ubuntu/arm_ws/build/arm_lib/CMakeFiles/std_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : arm_lib/CMakeFiles/std_msgs_generate_messages_py.dir/depend
 

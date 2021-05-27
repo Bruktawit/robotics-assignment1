@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/emnet/Desktop/Robotics/arm_ws/src
+CMAKE_SOURCE_DIR = /home/ubuntu/arm_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/emnet/Desktop/Robotics/arm_ws/build
+CMAKE_BINARY_DIR = /home/ubuntu/arm_ws/build
 
 # Include any dependencies generated for this target.
 include trans/CMakeFiles/publisher.dir/depend.make
@@ -58,17 +58,17 @@ include trans/CMakeFiles/publisher.dir/progress.make
 include trans/CMakeFiles/publisher.dir/flags.make
 
 trans/CMakeFiles/publisher.dir/src/publisher.cpp.o: trans/CMakeFiles/publisher.dir/flags.make
-trans/CMakeFiles/publisher.dir/src/publisher.cpp.o: /home/emnet/Desktop/Robotics/arm_ws/src/trans/src/publisher.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/emnet/Desktop/Robotics/arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object trans/CMakeFiles/publisher.dir/src/publisher.cpp.o"
-	cd /home/emnet/Desktop/Robotics/arm_ws/build/trans && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/publisher.dir/src/publisher.cpp.o -c /home/emnet/Desktop/Robotics/arm_ws/src/trans/src/publisher.cpp
+trans/CMakeFiles/publisher.dir/src/publisher.cpp.o: /home/ubuntu/arm_ws/src/trans/src/publisher.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object trans/CMakeFiles/publisher.dir/src/publisher.cpp.o"
+	cd /home/ubuntu/arm_ws/build/trans && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/publisher.dir/src/publisher.cpp.o -c /home/ubuntu/arm_ws/src/trans/src/publisher.cpp
 
 trans/CMakeFiles/publisher.dir/src/publisher.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/publisher.dir/src/publisher.cpp.i"
-	cd /home/emnet/Desktop/Robotics/arm_ws/build/trans && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/emnet/Desktop/Robotics/arm_ws/src/trans/src/publisher.cpp > CMakeFiles/publisher.dir/src/publisher.cpp.i
+	cd /home/ubuntu/arm_ws/build/trans && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/arm_ws/src/trans/src/publisher.cpp > CMakeFiles/publisher.dir/src/publisher.cpp.i
 
 trans/CMakeFiles/publisher.dir/src/publisher.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/publisher.dir/src/publisher.cpp.s"
-	cd /home/emnet/Desktop/Robotics/arm_ws/build/trans && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/emnet/Desktop/Robotics/arm_ws/src/trans/src/publisher.cpp -o CMakeFiles/publisher.dir/src/publisher.cpp.s
+	cd /home/ubuntu/arm_ws/build/trans && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/arm_ws/src/trans/src/publisher.cpp -o CMakeFiles/publisher.dir/src/publisher.cpp.s
 
 # Object files for target publisher
 publisher_OBJECTS = \
@@ -77,39 +77,39 @@ publisher_OBJECTS = \
 # External object files for target publisher
 publisher_EXTERNAL_OBJECTS =
 
-/home/emnet/Desktop/Robotics/arm_ws/devel/lib/trans/publisher: trans/CMakeFiles/publisher.dir/src/publisher.cpp.o
-/home/emnet/Desktop/Robotics/arm_ws/devel/lib/trans/publisher: trans/CMakeFiles/publisher.dir/build.make
-/home/emnet/Desktop/Robotics/arm_ws/devel/lib/trans/publisher: /opt/ros/noetic/lib/libroscpp.so
-/home/emnet/Desktop/Robotics/arm_ws/devel/lib/trans/publisher: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/emnet/Desktop/Robotics/arm_ws/devel/lib/trans/publisher: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
-/home/emnet/Desktop/Robotics/arm_ws/devel/lib/trans/publisher: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
-/home/emnet/Desktop/Robotics/arm_ws/devel/lib/trans/publisher: /opt/ros/noetic/lib/librosconsole.so
-/home/emnet/Desktop/Robotics/arm_ws/devel/lib/trans/publisher: /opt/ros/noetic/lib/librosconsole_log4cxx.so
-/home/emnet/Desktop/Robotics/arm_ws/devel/lib/trans/publisher: /opt/ros/noetic/lib/librosconsole_backend_interface.so
-/home/emnet/Desktop/Robotics/arm_ws/devel/lib/trans/publisher: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/emnet/Desktop/Robotics/arm_ws/devel/lib/trans/publisher: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
-/home/emnet/Desktop/Robotics/arm_ws/devel/lib/trans/publisher: /opt/ros/noetic/lib/libxmlrpcpp.so
-/home/emnet/Desktop/Robotics/arm_ws/devel/lib/trans/publisher: /opt/ros/noetic/lib/libroscpp_serialization.so
-/home/emnet/Desktop/Robotics/arm_ws/devel/lib/trans/publisher: /opt/ros/noetic/lib/librostime.so
-/home/emnet/Desktop/Robotics/arm_ws/devel/lib/trans/publisher: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
-/home/emnet/Desktop/Robotics/arm_ws/devel/lib/trans/publisher: /opt/ros/noetic/lib/libcpp_common.so
-/home/emnet/Desktop/Robotics/arm_ws/devel/lib/trans/publisher: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
-/home/emnet/Desktop/Robotics/arm_ws/devel/lib/trans/publisher: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
-/home/emnet/Desktop/Robotics/arm_ws/devel/lib/trans/publisher: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/emnet/Desktop/Robotics/arm_ws/devel/lib/trans/publisher: trans/CMakeFiles/publisher.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/emnet/Desktop/Robotics/arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/emnet/Desktop/Robotics/arm_ws/devel/lib/trans/publisher"
-	cd /home/emnet/Desktop/Robotics/arm_ws/build/trans && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/publisher.dir/link.txt --verbose=$(VERBOSE)
+/home/ubuntu/arm_ws/devel/lib/trans/publisher: trans/CMakeFiles/publisher.dir/src/publisher.cpp.o
+/home/ubuntu/arm_ws/devel/lib/trans/publisher: trans/CMakeFiles/publisher.dir/build.make
+/home/ubuntu/arm_ws/devel/lib/trans/publisher: /opt/ros/noetic/lib/libroscpp.so
+/home/ubuntu/arm_ws/devel/lib/trans/publisher: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/ubuntu/arm_ws/devel/lib/trans/publisher: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
+/home/ubuntu/arm_ws/devel/lib/trans/publisher: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
+/home/ubuntu/arm_ws/devel/lib/trans/publisher: /opt/ros/noetic/lib/librosconsole.so
+/home/ubuntu/arm_ws/devel/lib/trans/publisher: /opt/ros/noetic/lib/librosconsole_log4cxx.so
+/home/ubuntu/arm_ws/devel/lib/trans/publisher: /opt/ros/noetic/lib/librosconsole_backend_interface.so
+/home/ubuntu/arm_ws/devel/lib/trans/publisher: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/ubuntu/arm_ws/devel/lib/trans/publisher: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
+/home/ubuntu/arm_ws/devel/lib/trans/publisher: /opt/ros/noetic/lib/libxmlrpcpp.so
+/home/ubuntu/arm_ws/devel/lib/trans/publisher: /opt/ros/noetic/lib/libroscpp_serialization.so
+/home/ubuntu/arm_ws/devel/lib/trans/publisher: /opt/ros/noetic/lib/librostime.so
+/home/ubuntu/arm_ws/devel/lib/trans/publisher: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
+/home/ubuntu/arm_ws/devel/lib/trans/publisher: /opt/ros/noetic/lib/libcpp_common.so
+/home/ubuntu/arm_ws/devel/lib/trans/publisher: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
+/home/ubuntu/arm_ws/devel/lib/trans/publisher: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+/home/ubuntu/arm_ws/devel/lib/trans/publisher: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/ubuntu/arm_ws/devel/lib/trans/publisher: trans/CMakeFiles/publisher.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/ubuntu/arm_ws/devel/lib/trans/publisher"
+	cd /home/ubuntu/arm_ws/build/trans && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/publisher.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-trans/CMakeFiles/publisher.dir/build: /home/emnet/Desktop/Robotics/arm_ws/devel/lib/trans/publisher
+trans/CMakeFiles/publisher.dir/build: /home/ubuntu/arm_ws/devel/lib/trans/publisher
 
 .PHONY : trans/CMakeFiles/publisher.dir/build
 
 trans/CMakeFiles/publisher.dir/clean:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build/trans && $(CMAKE_COMMAND) -P CMakeFiles/publisher.dir/cmake_clean.cmake
+	cd /home/ubuntu/arm_ws/build/trans && $(CMAKE_COMMAND) -P CMakeFiles/publisher.dir/cmake_clean.cmake
 .PHONY : trans/CMakeFiles/publisher.dir/clean
 
 trans/CMakeFiles/publisher.dir/depend:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/emnet/Desktop/Robotics/arm_ws/src /home/emnet/Desktop/Robotics/arm_ws/src/trans /home/emnet/Desktop/Robotics/arm_ws/build /home/emnet/Desktop/Robotics/arm_ws/build/trans /home/emnet/Desktop/Robotics/arm_ws/build/trans/CMakeFiles/publisher.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/arm_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/arm_ws/src /home/ubuntu/arm_ws/src/trans /home/ubuntu/arm_ws/build /home/ubuntu/arm_ws/build/trans /home/ubuntu/arm_ws/build/trans/CMakeFiles/publisher.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : trans/CMakeFiles/publisher.dir/depend
 

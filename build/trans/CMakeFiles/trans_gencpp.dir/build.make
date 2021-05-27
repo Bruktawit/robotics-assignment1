@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/emnet/Desktop/Robotics/arm_ws/src
+CMAKE_SOURCE_DIR = /home/ubuntu/arm_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/emnet/Desktop/Robotics/arm_ws/build
+CMAKE_BINARY_DIR = /home/ubuntu/arm_ws/build
 
 # Utility rule file for trans_gencpp.
 
@@ -63,10 +63,10 @@ trans/CMakeFiles/trans_gencpp.dir/build: trans_gencpp
 .PHONY : trans/CMakeFiles/trans_gencpp.dir/build
 
 trans/CMakeFiles/trans_gencpp.dir/clean:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build/trans && $(CMAKE_COMMAND) -P CMakeFiles/trans_gencpp.dir/cmake_clean.cmake
+	cd /home/ubuntu/arm_ws/build/trans && $(CMAKE_COMMAND) -P CMakeFiles/trans_gencpp.dir/cmake_clean.cmake
 .PHONY : trans/CMakeFiles/trans_gencpp.dir/clean
 
 trans/CMakeFiles/trans_gencpp.dir/depend:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/emnet/Desktop/Robotics/arm_ws/src /home/emnet/Desktop/Robotics/arm_ws/src/trans /home/emnet/Desktop/Robotics/arm_ws/build /home/emnet/Desktop/Robotics/arm_ws/build/trans /home/emnet/Desktop/Robotics/arm_ws/build/trans/CMakeFiles/trans_gencpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/arm_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/arm_ws/src /home/ubuntu/arm_ws/src/trans /home/ubuntu/arm_ws/build /home/ubuntu/arm_ws/build/trans /home/ubuntu/arm_ws/build/trans/CMakeFiles/trans_gencpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : trans/CMakeFiles/trans_gencpp.dir/depend
 

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/emnet/Desktop/Robotics/arm_ws/src/trans/src/subscriber.cpp" "/home/emnet/Desktop/Robotics/arm_ws/build/trans/CMakeFiles/subscriber.dir/src/subscriber.cpp.o"
+  "/home/ubuntu/arm_ws/src/trans/src/subscriber.cpp" "/home/ubuntu/arm_ws/build/trans/CMakeFiles/subscriber.dir/src/subscriber.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,7 +17,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/emnet/Desktop/Robotics/arm_ws/devel/include"
+  "/home/ubuntu/arm_ws/devel/include"
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   )

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/emnet/Desktop/Robotics/arm_ws/devel/include/trans/out_position_angle_distance.h
+/home/ubuntu/arm_ws/devel/include/trans/out_position_angle_distance.h
 string
 -
 vector
@@ -22,7 +22,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/emnet/Desktop/Robotics/arm_ws/devel/include/trans/position_angle_distance.h
+/home/ubuntu/arm_ws/devel/include/trans/position_angle_distance.h
 string
 -
 vector
@@ -38,11 +38,11 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/emnet/Desktop/Robotics/arm_ws/src/trans/src/subscriber.cpp
+/home/ubuntu/arm_ws/src/trans/src/subscriber.cpp
 ros/ros.h
-/home/emnet/Desktop/Robotics/arm_ws/src/trans/src/ros/ros.h
+/home/ubuntu/arm_ws/src/trans/src/ros/ros.h
 std_msgs/String.h
-/home/emnet/Desktop/Robotics/arm_ws/src/trans/src/std_msgs/String.h
+/home/ubuntu/arm_ws/src/trans/src/std_msgs/String.h
 trans/position_angle_distance.h
 -
 trans/out_position_angle_distance.h

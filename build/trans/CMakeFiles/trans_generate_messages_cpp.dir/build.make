@@ -43,35 +43,35 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/emnet/Desktop/Robotics/arm_ws/src
+CMAKE_SOURCE_DIR = /home/ubuntu/arm_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/emnet/Desktop/Robotics/arm_ws/build
+CMAKE_BINARY_DIR = /home/ubuntu/arm_ws/build
 
 # Utility rule file for trans_generate_messages_cpp.
 
 # Include the progress variables for this target.
 include trans/CMakeFiles/trans_generate_messages_cpp.dir/progress.make
 
-trans/CMakeFiles/trans_generate_messages_cpp: /home/emnet/Desktop/Robotics/arm_ws/devel/include/trans/position_angle_distance.h
-trans/CMakeFiles/trans_generate_messages_cpp: /home/emnet/Desktop/Robotics/arm_ws/devel/include/trans/out_position_angle_distance.h
+trans/CMakeFiles/trans_generate_messages_cpp: /home/ubuntu/arm_ws/devel/include/trans/position_angle_distance.h
+trans/CMakeFiles/trans_generate_messages_cpp: /home/ubuntu/arm_ws/devel/include/trans/out_position_angle_distance.h
 
 
-/home/emnet/Desktop/Robotics/arm_ws/devel/include/trans/position_angle_distance.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/emnet/Desktop/Robotics/arm_ws/devel/include/trans/position_angle_distance.h: /home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/position_angle_distance.msg
-/home/emnet/Desktop/Robotics/arm_ws/devel/include/trans/position_angle_distance.h: /opt/ros/noetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/emnet/Desktop/Robotics/arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from trans/position_angle_distance.msg"
-	cd /home/emnet/Desktop/Robotics/arm_ws/src/trans && /home/emnet/Desktop/Robotics/arm_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/position_angle_distance.msg -Itrans:/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p trans -o /home/emnet/Desktop/Robotics/arm_ws/devel/include/trans -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/ubuntu/arm_ws/devel/include/trans/position_angle_distance.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/ubuntu/arm_ws/devel/include/trans/position_angle_distance.h: /home/ubuntu/arm_ws/src/trans/msg/position_angle_distance.msg
+/home/ubuntu/arm_ws/devel/include/trans/position_angle_distance.h: /opt/ros/noetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from trans/position_angle_distance.msg"
+	cd /home/ubuntu/arm_ws/src/trans && /home/ubuntu/arm_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/ubuntu/arm_ws/src/trans/msg/position_angle_distance.msg -Itrans:/home/ubuntu/arm_ws/src/trans/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p trans -o /home/ubuntu/arm_ws/devel/include/trans -e /opt/ros/noetic/share/gencpp/cmake/..
 
-/home/emnet/Desktop/Robotics/arm_ws/devel/include/trans/out_position_angle_distance.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/emnet/Desktop/Robotics/arm_ws/devel/include/trans/out_position_angle_distance.h: /home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/out_position_angle_distance.msg
-/home/emnet/Desktop/Robotics/arm_ws/devel/include/trans/out_position_angle_distance.h: /opt/ros/noetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/emnet/Desktop/Robotics/arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from trans/out_position_angle_distance.msg"
-	cd /home/emnet/Desktop/Robotics/arm_ws/src/trans && /home/emnet/Desktop/Robotics/arm_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/out_position_angle_distance.msg -Itrans:/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p trans -o /home/emnet/Desktop/Robotics/arm_ws/devel/include/trans -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/ubuntu/arm_ws/devel/include/trans/out_position_angle_distance.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/ubuntu/arm_ws/devel/include/trans/out_position_angle_distance.h: /home/ubuntu/arm_ws/src/trans/msg/out_position_angle_distance.msg
+/home/ubuntu/arm_ws/devel/include/trans/out_position_angle_distance.h: /opt/ros/noetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from trans/out_position_angle_distance.msg"
+	cd /home/ubuntu/arm_ws/src/trans && /home/ubuntu/arm_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/ubuntu/arm_ws/src/trans/msg/out_position_angle_distance.msg -Itrans:/home/ubuntu/arm_ws/src/trans/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p trans -o /home/ubuntu/arm_ws/devel/include/trans -e /opt/ros/noetic/share/gencpp/cmake/..
 
 trans_generate_messages_cpp: trans/CMakeFiles/trans_generate_messages_cpp
-trans_generate_messages_cpp: /home/emnet/Desktop/Robotics/arm_ws/devel/include/trans/position_angle_distance.h
-trans_generate_messages_cpp: /home/emnet/Desktop/Robotics/arm_ws/devel/include/trans/out_position_angle_distance.h
+trans_generate_messages_cpp: /home/ubuntu/arm_ws/devel/include/trans/position_angle_distance.h
+trans_generate_messages_cpp: /home/ubuntu/arm_ws/devel/include/trans/out_position_angle_distance.h
 trans_generate_messages_cpp: trans/CMakeFiles/trans_generate_messages_cpp.dir/build.make
 
 .PHONY : trans_generate_messages_cpp
@@ -82,10 +82,10 @@ trans/CMakeFiles/trans_generate_messages_cpp.dir/build: trans_generate_messages_
 .PHONY : trans/CMakeFiles/trans_generate_messages_cpp.dir/build
 
 trans/CMakeFiles/trans_generate_messages_cpp.dir/clean:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build/trans && $(CMAKE_COMMAND) -P CMakeFiles/trans_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /home/ubuntu/arm_ws/build/trans && $(CMAKE_COMMAND) -P CMakeFiles/trans_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : trans/CMakeFiles/trans_generate_messages_cpp.dir/clean
 
 trans/CMakeFiles/trans_generate_messages_cpp.dir/depend:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/emnet/Desktop/Robotics/arm_ws/src /home/emnet/Desktop/Robotics/arm_ws/src/trans /home/emnet/Desktop/Robotics/arm_ws/build /home/emnet/Desktop/Robotics/arm_ws/build/trans /home/emnet/Desktop/Robotics/arm_ws/build/trans/CMakeFiles/trans_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/arm_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/arm_ws/src /home/ubuntu/arm_ws/src/trans /home/ubuntu/arm_ws/build /home/ubuntu/arm_ws/build/trans /home/ubuntu/arm_ws/build/trans/CMakeFiles/trans_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : trans/CMakeFiles/trans_generate_messages_cpp.dir/depend
 

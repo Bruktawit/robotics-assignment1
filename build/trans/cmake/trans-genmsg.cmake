@@ -2,7 +2,7 @@
 
 message(STATUS "trans: 2 messages, 0 services")
 
-set(MSG_I_FLAGS "-Itrans:/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Itrans:/home/ubuntu/arm_ws/src/trans/msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,14 +17,14 @@ add_custom_target(trans_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/position_angle_distance.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/arm_ws/src/trans/msg/position_angle_distance.msg" NAME_WE)
 add_custom_target(_trans_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "trans" "/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/position_angle_distance.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "trans" "/home/ubuntu/arm_ws/src/trans/msg/position_angle_distance.msg" ""
 )
 
-get_filename_component(_filename "/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/out_position_angle_distance.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/arm_ws/src/trans/msg/out_position_angle_distance.msg" NAME_WE)
 add_custom_target(_trans_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "trans" "/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/out_position_angle_distance.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "trans" "/home/ubuntu/arm_ws/src/trans/msg/out_position_angle_distance.msg" ""
 )
 
 #
@@ -34,13 +34,13 @@ add_custom_target(_trans_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(trans
-  "/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/position_angle_distance.msg"
+  "/home/ubuntu/arm_ws/src/trans/msg/position_angle_distance.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/trans
 )
 _generate_msg_cpp(trans
-  "/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/out_position_angle_distance.msg"
+  "/home/ubuntu/arm_ws/src/trans/msg/out_position_angle_distance.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/trans
@@ -60,9 +60,9 @@ add_custom_target(trans_generate_messages_cpp
 add_dependencies(trans_generate_messages trans_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/position_angle_distance.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/arm_ws/src/trans/msg/position_angle_distance.msg" NAME_WE)
 add_dependencies(trans_generate_messages_cpp _trans_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/out_position_angle_distance.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/arm_ws/src/trans/msg/out_position_angle_distance.msg" NAME_WE)
 add_dependencies(trans_generate_messages_cpp _trans_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -75,13 +75,13 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS trans_generate_messages_cpp)
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(trans
-  "/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/position_angle_distance.msg"
+  "/home/ubuntu/arm_ws/src/trans/msg/position_angle_distance.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/trans
 )
 _generate_msg_eus(trans
-  "/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/out_position_angle_distance.msg"
+  "/home/ubuntu/arm_ws/src/trans/msg/out_position_angle_distance.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/trans
@@ -101,9 +101,9 @@ add_custom_target(trans_generate_messages_eus
 add_dependencies(trans_generate_messages trans_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/position_angle_distance.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/arm_ws/src/trans/msg/position_angle_distance.msg" NAME_WE)
 add_dependencies(trans_generate_messages_eus _trans_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/out_position_angle_distance.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/arm_ws/src/trans/msg/out_position_angle_distance.msg" NAME_WE)
 add_dependencies(trans_generate_messages_eus _trans_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -116,13 +116,13 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS trans_generate_messages_eus)
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(trans
-  "/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/position_angle_distance.msg"
+  "/home/ubuntu/arm_ws/src/trans/msg/position_angle_distance.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/trans
 )
 _generate_msg_lisp(trans
-  "/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/out_position_angle_distance.msg"
+  "/home/ubuntu/arm_ws/src/trans/msg/out_position_angle_distance.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/trans
@@ -142,9 +142,9 @@ add_custom_target(trans_generate_messages_lisp
 add_dependencies(trans_generate_messages trans_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/position_angle_distance.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/arm_ws/src/trans/msg/position_angle_distance.msg" NAME_WE)
 add_dependencies(trans_generate_messages_lisp _trans_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/out_position_angle_distance.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/arm_ws/src/trans/msg/out_position_angle_distance.msg" NAME_WE)
 add_dependencies(trans_generate_messages_lisp _trans_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -157,13 +157,13 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS trans_generate_messages_lisp)
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(trans
-  "/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/position_angle_distance.msg"
+  "/home/ubuntu/arm_ws/src/trans/msg/position_angle_distance.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/trans
 )
 _generate_msg_nodejs(trans
-  "/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/out_position_angle_distance.msg"
+  "/home/ubuntu/arm_ws/src/trans/msg/out_position_angle_distance.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/trans
@@ -183,9 +183,9 @@ add_custom_target(trans_generate_messages_nodejs
 add_dependencies(trans_generate_messages trans_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/position_angle_distance.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/arm_ws/src/trans/msg/position_angle_distance.msg" NAME_WE)
 add_dependencies(trans_generate_messages_nodejs _trans_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/out_position_angle_distance.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/arm_ws/src/trans/msg/out_position_angle_distance.msg" NAME_WE)
 add_dependencies(trans_generate_messages_nodejs _trans_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -198,13 +198,13 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS trans_generate_messages_nodejs)
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(trans
-  "/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/position_angle_distance.msg"
+  "/home/ubuntu/arm_ws/src/trans/msg/position_angle_distance.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/trans
 )
 _generate_msg_py(trans
-  "/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/out_position_angle_distance.msg"
+  "/home/ubuntu/arm_ws/src/trans/msg/out_position_angle_distance.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/trans
@@ -224,9 +224,9 @@ add_custom_target(trans_generate_messages_py
 add_dependencies(trans_generate_messages trans_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/position_angle_distance.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/arm_ws/src/trans/msg/position_angle_distance.msg" NAME_WE)
 add_dependencies(trans_generate_messages_py _trans_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/out_position_angle_distance.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/arm_ws/src/trans/msg/out_position_angle_distance.msg" NAME_WE)
 add_dependencies(trans_generate_messages_py _trans_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

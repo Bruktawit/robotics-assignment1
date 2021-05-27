@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/emnet/Desktop/Robotics/arm_ws/devel/share/common-lisp/ros/trans/msg/out_position_angle_distance.lisp"
-  "/home/emnet/Desktop/Robotics/arm_ws/devel/share/common-lisp/ros/trans/msg/position_angle_distance.lisp"
+  "/home/ubuntu/arm_ws/devel/share/common-lisp/ros/trans/msg/out_position_angle_distance.lisp"
+  "/home/ubuntu/arm_ws/devel/share/common-lisp/ros/trans/msg/position_angle_distance.lisp"
   "CMakeFiles/trans_generate_messages_lisp"
 )
 

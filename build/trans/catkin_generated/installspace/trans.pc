@@ -1,4 +1,4 @@
-prefix=/home/emnet/Desktop/Robotics/arm_ws/install
+prefix=/home/ubuntu/arm_ws/install
 
 Name: trans
 Description: Description of trans

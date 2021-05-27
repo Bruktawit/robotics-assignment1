@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/emnet/Desktop/Robotics/arm_ws/src
+CMAKE_SOURCE_DIR = /home/ubuntu/arm_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/emnet/Desktop/Robotics/arm_ws/build
+CMAKE_BINARY_DIR = /home/ubuntu/arm_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/emnet/Desktop/Robotics/arm_ws/build/CMakeFiles /home/emnet/Desktop/Robotics/arm_ws/build/trans/CMakeFiles/progress.marks
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trans/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/emnet/Desktop/Robotics/arm_ws/build/CMakeFiles 0
+	cd /home/ubuntu/arm_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/arm_ws/build/CMakeFiles /home/ubuntu/arm_ws/build/trans/CMakeFiles/progress.marks
+	cd /home/ubuntu/arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trans/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/arm_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trans/clean
+	cd /home/ubuntu/arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trans/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trans/preinstall
+	cd /home/ubuntu/arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trans/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trans/preinstall
+	cd /home/ubuntu/arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trans/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ubuntu/arm_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 trans/CMakeFiles/subscriber.dir/rule:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trans/CMakeFiles/subscriber.dir/rule
+	cd /home/ubuntu/arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trans/CMakeFiles/subscriber.dir/rule
 .PHONY : trans/CMakeFiles/subscriber.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ subscriber: trans/CMakeFiles/subscriber.dir/rule
 
 # fast build rule for target.
 subscriber/fast:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(MAKE) -f trans/CMakeFiles/subscriber.dir/build.make trans/CMakeFiles/subscriber.dir/build
+	cd /home/ubuntu/arm_ws/build && $(MAKE) -f trans/CMakeFiles/subscriber.dir/build.make trans/CMakeFiles/subscriber.dir/build
 .PHONY : subscriber/fast
 
 # Convenience name for target.
 trans/CMakeFiles/trans_geneus.dir/rule:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trans/CMakeFiles/trans_geneus.dir/rule
+	cd /home/ubuntu/arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trans/CMakeFiles/trans_geneus.dir/rule
 .PHONY : trans/CMakeFiles/trans_geneus.dir/rule
 
 # Convenience name for target.
@@ -194,12 +194,12 @@ trans_geneus: trans/CMakeFiles/trans_geneus.dir/rule
 
 # fast build rule for target.
 trans_geneus/fast:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(MAKE) -f trans/CMakeFiles/trans_geneus.dir/build.make trans/CMakeFiles/trans_geneus.dir/build
+	cd /home/ubuntu/arm_ws/build && $(MAKE) -f trans/CMakeFiles/trans_geneus.dir/build.make trans/CMakeFiles/trans_geneus.dir/build
 .PHONY : trans_geneus/fast
 
 # Convenience name for target.
 trans/CMakeFiles/trans_generate_messages_eus.dir/rule:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trans/CMakeFiles/trans_generate_messages_eus.dir/rule
+	cd /home/ubuntu/arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trans/CMakeFiles/trans_generate_messages_eus.dir/rule
 .PHONY : trans/CMakeFiles/trans_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -209,12 +209,12 @@ trans_generate_messages_eus: trans/CMakeFiles/trans_generate_messages_eus.dir/ru
 
 # fast build rule for target.
 trans_generate_messages_eus/fast:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(MAKE) -f trans/CMakeFiles/trans_generate_messages_eus.dir/build.make trans/CMakeFiles/trans_generate_messages_eus.dir/build
+	cd /home/ubuntu/arm_ws/build && $(MAKE) -f trans/CMakeFiles/trans_generate_messages_eus.dir/build.make trans/CMakeFiles/trans_generate_messages_eus.dir/build
 .PHONY : trans_generate_messages_eus/fast
 
 # Convenience name for target.
 trans/CMakeFiles/_trans_generate_messages_check_deps_out_position_angle_distance.dir/rule:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trans/CMakeFiles/_trans_generate_messages_check_deps_out_position_angle_distance.dir/rule
+	cd /home/ubuntu/arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trans/CMakeFiles/_trans_generate_messages_check_deps_out_position_angle_distance.dir/rule
 .PHONY : trans/CMakeFiles/_trans_generate_messages_check_deps_out_position_angle_distance.dir/rule
 
 # Convenience name for target.
@@ -224,12 +224,12 @@ _trans_generate_messages_check_deps_out_position_angle_distance: trans/CMakeFile
 
 # fast build rule for target.
 _trans_generate_messages_check_deps_out_position_angle_distance/fast:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(MAKE) -f trans/CMakeFiles/_trans_generate_messages_check_deps_out_position_angle_distance.dir/build.make trans/CMakeFiles/_trans_generate_messages_check_deps_out_position_angle_distance.dir/build
+	cd /home/ubuntu/arm_ws/build && $(MAKE) -f trans/CMakeFiles/_trans_generate_messages_check_deps_out_position_angle_distance.dir/build.make trans/CMakeFiles/_trans_generate_messages_check_deps_out_position_angle_distance.dir/build
 .PHONY : _trans_generate_messages_check_deps_out_position_angle_distance/fast
 
 # Convenience name for target.
 trans/CMakeFiles/trans_gencpp.dir/rule:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trans/CMakeFiles/trans_gencpp.dir/rule
+	cd /home/ubuntu/arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trans/CMakeFiles/trans_gencpp.dir/rule
 .PHONY : trans/CMakeFiles/trans_gencpp.dir/rule
 
 # Convenience name for target.
@@ -239,12 +239,12 @@ trans_gencpp: trans/CMakeFiles/trans_gencpp.dir/rule
 
 # fast build rule for target.
 trans_gencpp/fast:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(MAKE) -f trans/CMakeFiles/trans_gencpp.dir/build.make trans/CMakeFiles/trans_gencpp.dir/build
+	cd /home/ubuntu/arm_ws/build && $(MAKE) -f trans/CMakeFiles/trans_gencpp.dir/build.make trans/CMakeFiles/trans_gencpp.dir/build
 .PHONY : trans_gencpp/fast
 
 # Convenience name for target.
 trans/CMakeFiles/trans_generate_messages_py.dir/rule:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trans/CMakeFiles/trans_generate_messages_py.dir/rule
+	cd /home/ubuntu/arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trans/CMakeFiles/trans_generate_messages_py.dir/rule
 .PHONY : trans/CMakeFiles/trans_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -254,12 +254,12 @@ trans_generate_messages_py: trans/CMakeFiles/trans_generate_messages_py.dir/rule
 
 # fast build rule for target.
 trans_generate_messages_py/fast:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(MAKE) -f trans/CMakeFiles/trans_generate_messages_py.dir/build.make trans/CMakeFiles/trans_generate_messages_py.dir/build
+	cd /home/ubuntu/arm_ws/build && $(MAKE) -f trans/CMakeFiles/trans_generate_messages_py.dir/build.make trans/CMakeFiles/trans_generate_messages_py.dir/build
 .PHONY : trans_generate_messages_py/fast
 
 # Convenience name for target.
 trans/CMakeFiles/_trans_generate_messages_check_deps_position_angle_distance.dir/rule:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trans/CMakeFiles/_trans_generate_messages_check_deps_position_angle_distance.dir/rule
+	cd /home/ubuntu/arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trans/CMakeFiles/_trans_generate_messages_check_deps_position_angle_distance.dir/rule
 .PHONY : trans/CMakeFiles/_trans_generate_messages_check_deps_position_angle_distance.dir/rule
 
 # Convenience name for target.
@@ -269,12 +269,12 @@ _trans_generate_messages_check_deps_position_angle_distance: trans/CMakeFiles/_t
 
 # fast build rule for target.
 _trans_generate_messages_check_deps_position_angle_distance/fast:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(MAKE) -f trans/CMakeFiles/_trans_generate_messages_check_deps_position_angle_distance.dir/build.make trans/CMakeFiles/_trans_generate_messages_check_deps_position_angle_distance.dir/build
+	cd /home/ubuntu/arm_ws/build && $(MAKE) -f trans/CMakeFiles/_trans_generate_messages_check_deps_position_angle_distance.dir/build.make trans/CMakeFiles/_trans_generate_messages_check_deps_position_angle_distance.dir/build
 .PHONY : _trans_generate_messages_check_deps_position_angle_distance/fast
 
 # Convenience name for target.
 trans/CMakeFiles/trans_generate_messages_cpp.dir/rule:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trans/CMakeFiles/trans_generate_messages_cpp.dir/rule
+	cd /home/ubuntu/arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trans/CMakeFiles/trans_generate_messages_cpp.dir/rule
 .PHONY : trans/CMakeFiles/trans_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -284,12 +284,12 @@ trans_generate_messages_cpp: trans/CMakeFiles/trans_generate_messages_cpp.dir/ru
 
 # fast build rule for target.
 trans_generate_messages_cpp/fast:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(MAKE) -f trans/CMakeFiles/trans_generate_messages_cpp.dir/build.make trans/CMakeFiles/trans_generate_messages_cpp.dir/build
+	cd /home/ubuntu/arm_ws/build && $(MAKE) -f trans/CMakeFiles/trans_generate_messages_cpp.dir/build.make trans/CMakeFiles/trans_generate_messages_cpp.dir/build
 .PHONY : trans_generate_messages_cpp/fast
 
 # Convenience name for target.
 trans/CMakeFiles/publisher.dir/rule:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trans/CMakeFiles/publisher.dir/rule
+	cd /home/ubuntu/arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trans/CMakeFiles/publisher.dir/rule
 .PHONY : trans/CMakeFiles/publisher.dir/rule
 
 # Convenience name for target.
@@ -299,12 +299,12 @@ publisher: trans/CMakeFiles/publisher.dir/rule
 
 # fast build rule for target.
 publisher/fast:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(MAKE) -f trans/CMakeFiles/publisher.dir/build.make trans/CMakeFiles/publisher.dir/build
+	cd /home/ubuntu/arm_ws/build && $(MAKE) -f trans/CMakeFiles/publisher.dir/build.make trans/CMakeFiles/publisher.dir/build
 .PHONY : publisher/fast
 
 # Convenience name for target.
 trans/CMakeFiles/trans_generate_messages_lisp.dir/rule:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trans/CMakeFiles/trans_generate_messages_lisp.dir/rule
+	cd /home/ubuntu/arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trans/CMakeFiles/trans_generate_messages_lisp.dir/rule
 .PHONY : trans/CMakeFiles/trans_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -314,12 +314,12 @@ trans_generate_messages_lisp: trans/CMakeFiles/trans_generate_messages_lisp.dir/
 
 # fast build rule for target.
 trans_generate_messages_lisp/fast:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(MAKE) -f trans/CMakeFiles/trans_generate_messages_lisp.dir/build.make trans/CMakeFiles/trans_generate_messages_lisp.dir/build
+	cd /home/ubuntu/arm_ws/build && $(MAKE) -f trans/CMakeFiles/trans_generate_messages_lisp.dir/build.make trans/CMakeFiles/trans_generate_messages_lisp.dir/build
 .PHONY : trans_generate_messages_lisp/fast
 
 # Convenience name for target.
 trans/CMakeFiles/trans_genlisp.dir/rule:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trans/CMakeFiles/trans_genlisp.dir/rule
+	cd /home/ubuntu/arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trans/CMakeFiles/trans_genlisp.dir/rule
 .PHONY : trans/CMakeFiles/trans_genlisp.dir/rule
 
 # Convenience name for target.
@@ -329,12 +329,12 @@ trans_genlisp: trans/CMakeFiles/trans_genlisp.dir/rule
 
 # fast build rule for target.
 trans_genlisp/fast:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(MAKE) -f trans/CMakeFiles/trans_genlisp.dir/build.make trans/CMakeFiles/trans_genlisp.dir/build
+	cd /home/ubuntu/arm_ws/build && $(MAKE) -f trans/CMakeFiles/trans_genlisp.dir/build.make trans/CMakeFiles/trans_genlisp.dir/build
 .PHONY : trans_genlisp/fast
 
 # Convenience name for target.
 trans/CMakeFiles/trans_gennodejs.dir/rule:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trans/CMakeFiles/trans_gennodejs.dir/rule
+	cd /home/ubuntu/arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trans/CMakeFiles/trans_gennodejs.dir/rule
 .PHONY : trans/CMakeFiles/trans_gennodejs.dir/rule
 
 # Convenience name for target.
@@ -344,12 +344,12 @@ trans_gennodejs: trans/CMakeFiles/trans_gennodejs.dir/rule
 
 # fast build rule for target.
 trans_gennodejs/fast:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(MAKE) -f trans/CMakeFiles/trans_gennodejs.dir/build.make trans/CMakeFiles/trans_gennodejs.dir/build
+	cd /home/ubuntu/arm_ws/build && $(MAKE) -f trans/CMakeFiles/trans_gennodejs.dir/build.make trans/CMakeFiles/trans_gennodejs.dir/build
 .PHONY : trans_gennodejs/fast
 
 # Convenience name for target.
 trans/CMakeFiles/trans_generate_messages_nodejs.dir/rule:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trans/CMakeFiles/trans_generate_messages_nodejs.dir/rule
+	cd /home/ubuntu/arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trans/CMakeFiles/trans_generate_messages_nodejs.dir/rule
 .PHONY : trans/CMakeFiles/trans_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -359,12 +359,12 @@ trans_generate_messages_nodejs: trans/CMakeFiles/trans_generate_messages_nodejs.
 
 # fast build rule for target.
 trans_generate_messages_nodejs/fast:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(MAKE) -f trans/CMakeFiles/trans_generate_messages_nodejs.dir/build.make trans/CMakeFiles/trans_generate_messages_nodejs.dir/build
+	cd /home/ubuntu/arm_ws/build && $(MAKE) -f trans/CMakeFiles/trans_generate_messages_nodejs.dir/build.make trans/CMakeFiles/trans_generate_messages_nodejs.dir/build
 .PHONY : trans_generate_messages_nodejs/fast
 
 # Convenience name for target.
 trans/CMakeFiles/trans_generate_messages.dir/rule:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trans/CMakeFiles/trans_generate_messages.dir/rule
+	cd /home/ubuntu/arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trans/CMakeFiles/trans_generate_messages.dir/rule
 .PHONY : trans/CMakeFiles/trans_generate_messages.dir/rule
 
 # Convenience name for target.
@@ -374,12 +374,12 @@ trans_generate_messages: trans/CMakeFiles/trans_generate_messages.dir/rule
 
 # fast build rule for target.
 trans_generate_messages/fast:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(MAKE) -f trans/CMakeFiles/trans_generate_messages.dir/build.make trans/CMakeFiles/trans_generate_messages.dir/build
+	cd /home/ubuntu/arm_ws/build && $(MAKE) -f trans/CMakeFiles/trans_generate_messages.dir/build.make trans/CMakeFiles/trans_generate_messages.dir/build
 .PHONY : trans_generate_messages/fast
 
 # Convenience name for target.
 trans/CMakeFiles/trans_genpy.dir/rule:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trans/CMakeFiles/trans_genpy.dir/rule
+	cd /home/ubuntu/arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 trans/CMakeFiles/trans_genpy.dir/rule
 .PHONY : trans/CMakeFiles/trans_genpy.dir/rule
 
 # Convenience name for target.
@@ -389,7 +389,7 @@ trans_genpy: trans/CMakeFiles/trans_genpy.dir/rule
 
 # fast build rule for target.
 trans_genpy/fast:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(MAKE) -f trans/CMakeFiles/trans_genpy.dir/build.make trans/CMakeFiles/trans_genpy.dir/build
+	cd /home/ubuntu/arm_ws/build && $(MAKE) -f trans/CMakeFiles/trans_genpy.dir/build.make trans/CMakeFiles/trans_genpy.dir/build
 .PHONY : trans_genpy/fast
 
 src/publisher.o: src/publisher.cpp.o
@@ -398,7 +398,7 @@ src/publisher.o: src/publisher.cpp.o
 
 # target to build an object file
 src/publisher.cpp.o:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(MAKE) -f trans/CMakeFiles/publisher.dir/build.make trans/CMakeFiles/publisher.dir/src/publisher.cpp.o
+	cd /home/ubuntu/arm_ws/build && $(MAKE) -f trans/CMakeFiles/publisher.dir/build.make trans/CMakeFiles/publisher.dir/src/publisher.cpp.o
 .PHONY : src/publisher.cpp.o
 
 src/publisher.i: src/publisher.cpp.i
@@ -407,7 +407,7 @@ src/publisher.i: src/publisher.cpp.i
 
 # target to preprocess a source file
 src/publisher.cpp.i:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(MAKE) -f trans/CMakeFiles/publisher.dir/build.make trans/CMakeFiles/publisher.dir/src/publisher.cpp.i
+	cd /home/ubuntu/arm_ws/build && $(MAKE) -f trans/CMakeFiles/publisher.dir/build.make trans/CMakeFiles/publisher.dir/src/publisher.cpp.i
 .PHONY : src/publisher.cpp.i
 
 src/publisher.s: src/publisher.cpp.s
@@ -416,7 +416,7 @@ src/publisher.s: src/publisher.cpp.s
 
 # target to generate assembly for a file
 src/publisher.cpp.s:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(MAKE) -f trans/CMakeFiles/publisher.dir/build.make trans/CMakeFiles/publisher.dir/src/publisher.cpp.s
+	cd /home/ubuntu/arm_ws/build && $(MAKE) -f trans/CMakeFiles/publisher.dir/build.make trans/CMakeFiles/publisher.dir/src/publisher.cpp.s
 .PHONY : src/publisher.cpp.s
 
 src/subscriber.o: src/subscriber.cpp.o
@@ -425,7 +425,7 @@ src/subscriber.o: src/subscriber.cpp.o
 
 # target to build an object file
 src/subscriber.cpp.o:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(MAKE) -f trans/CMakeFiles/subscriber.dir/build.make trans/CMakeFiles/subscriber.dir/src/subscriber.cpp.o
+	cd /home/ubuntu/arm_ws/build && $(MAKE) -f trans/CMakeFiles/subscriber.dir/build.make trans/CMakeFiles/subscriber.dir/src/subscriber.cpp.o
 .PHONY : src/subscriber.cpp.o
 
 src/subscriber.i: src/subscriber.cpp.i
@@ -434,7 +434,7 @@ src/subscriber.i: src/subscriber.cpp.i
 
 # target to preprocess a source file
 src/subscriber.cpp.i:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(MAKE) -f trans/CMakeFiles/subscriber.dir/build.make trans/CMakeFiles/subscriber.dir/src/subscriber.cpp.i
+	cd /home/ubuntu/arm_ws/build && $(MAKE) -f trans/CMakeFiles/subscriber.dir/build.make trans/CMakeFiles/subscriber.dir/src/subscriber.cpp.i
 .PHONY : src/subscriber.cpp.i
 
 src/subscriber.s: src/subscriber.cpp.s
@@ -443,7 +443,7 @@ src/subscriber.s: src/subscriber.cpp.s
 
 # target to generate assembly for a file
 src/subscriber.cpp.s:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(MAKE) -f trans/CMakeFiles/subscriber.dir/build.make trans/CMakeFiles/subscriber.dir/src/subscriber.cpp.s
+	cd /home/ubuntu/arm_ws/build && $(MAKE) -f trans/CMakeFiles/subscriber.dir/build.make trans/CMakeFiles/subscriber.dir/src/subscriber.cpp.s
 .PHONY : src/subscriber.cpp.s
 
 # Help Target
@@ -491,6 +491,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ubuntu/arm_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

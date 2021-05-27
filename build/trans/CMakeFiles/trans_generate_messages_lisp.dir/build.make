@@ -43,33 +43,33 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/emnet/Desktop/Robotics/arm_ws/src
+CMAKE_SOURCE_DIR = /home/ubuntu/arm_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/emnet/Desktop/Robotics/arm_ws/build
+CMAKE_BINARY_DIR = /home/ubuntu/arm_ws/build
 
 # Utility rule file for trans_generate_messages_lisp.
 
 # Include the progress variables for this target.
 include trans/CMakeFiles/trans_generate_messages_lisp.dir/progress.make
 
-trans/CMakeFiles/trans_generate_messages_lisp: /home/emnet/Desktop/Robotics/arm_ws/devel/share/common-lisp/ros/trans/msg/position_angle_distance.lisp
-trans/CMakeFiles/trans_generate_messages_lisp: /home/emnet/Desktop/Robotics/arm_ws/devel/share/common-lisp/ros/trans/msg/out_position_angle_distance.lisp
+trans/CMakeFiles/trans_generate_messages_lisp: /home/ubuntu/arm_ws/devel/share/common-lisp/ros/trans/msg/position_angle_distance.lisp
+trans/CMakeFiles/trans_generate_messages_lisp: /home/ubuntu/arm_ws/devel/share/common-lisp/ros/trans/msg/out_position_angle_distance.lisp
 
 
-/home/emnet/Desktop/Robotics/arm_ws/devel/share/common-lisp/ros/trans/msg/position_angle_distance.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
-/home/emnet/Desktop/Robotics/arm_ws/devel/share/common-lisp/ros/trans/msg/position_angle_distance.lisp: /home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/position_angle_distance.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/emnet/Desktop/Robotics/arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Lisp code from trans/position_angle_distance.msg"
-	cd /home/emnet/Desktop/Robotics/arm_ws/build/trans && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/position_angle_distance.msg -Itrans:/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p trans -o /home/emnet/Desktop/Robotics/arm_ws/devel/share/common-lisp/ros/trans/msg
+/home/ubuntu/arm_ws/devel/share/common-lisp/ros/trans/msg/position_angle_distance.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+/home/ubuntu/arm_ws/devel/share/common-lisp/ros/trans/msg/position_angle_distance.lisp: /home/ubuntu/arm_ws/src/trans/msg/position_angle_distance.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Lisp code from trans/position_angle_distance.msg"
+	cd /home/ubuntu/arm_ws/build/trans && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/ubuntu/arm_ws/src/trans/msg/position_angle_distance.msg -Itrans:/home/ubuntu/arm_ws/src/trans/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p trans -o /home/ubuntu/arm_ws/devel/share/common-lisp/ros/trans/msg
 
-/home/emnet/Desktop/Robotics/arm_ws/devel/share/common-lisp/ros/trans/msg/out_position_angle_distance.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
-/home/emnet/Desktop/Robotics/arm_ws/devel/share/common-lisp/ros/trans/msg/out_position_angle_distance.lisp: /home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/out_position_angle_distance.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/emnet/Desktop/Robotics/arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Lisp code from trans/out_position_angle_distance.msg"
-	cd /home/emnet/Desktop/Robotics/arm_ws/build/trans && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/out_position_angle_distance.msg -Itrans:/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p trans -o /home/emnet/Desktop/Robotics/arm_ws/devel/share/common-lisp/ros/trans/msg
+/home/ubuntu/arm_ws/devel/share/common-lisp/ros/trans/msg/out_position_angle_distance.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+/home/ubuntu/arm_ws/devel/share/common-lisp/ros/trans/msg/out_position_angle_distance.lisp: /home/ubuntu/arm_ws/src/trans/msg/out_position_angle_distance.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Lisp code from trans/out_position_angle_distance.msg"
+	cd /home/ubuntu/arm_ws/build/trans && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/ubuntu/arm_ws/src/trans/msg/out_position_angle_distance.msg -Itrans:/home/ubuntu/arm_ws/src/trans/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p trans -o /home/ubuntu/arm_ws/devel/share/common-lisp/ros/trans/msg
 
 trans_generate_messages_lisp: trans/CMakeFiles/trans_generate_messages_lisp
-trans_generate_messages_lisp: /home/emnet/Desktop/Robotics/arm_ws/devel/share/common-lisp/ros/trans/msg/position_angle_distance.lisp
-trans_generate_messages_lisp: /home/emnet/Desktop/Robotics/arm_ws/devel/share/common-lisp/ros/trans/msg/out_position_angle_distance.lisp
+trans_generate_messages_lisp: /home/ubuntu/arm_ws/devel/share/common-lisp/ros/trans/msg/position_angle_distance.lisp
+trans_generate_messages_lisp: /home/ubuntu/arm_ws/devel/share/common-lisp/ros/trans/msg/out_position_angle_distance.lisp
 trans_generate_messages_lisp: trans/CMakeFiles/trans_generate_messages_lisp.dir/build.make
 
 .PHONY : trans_generate_messages_lisp
@@ -80,10 +80,10 @@ trans/CMakeFiles/trans_generate_messages_lisp.dir/build: trans_generate_messages
 .PHONY : trans/CMakeFiles/trans_generate_messages_lisp.dir/build
 
 trans/CMakeFiles/trans_generate_messages_lisp.dir/clean:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build/trans && $(CMAKE_COMMAND) -P CMakeFiles/trans_generate_messages_lisp.dir/cmake_clean.cmake
+	cd /home/ubuntu/arm_ws/build/trans && $(CMAKE_COMMAND) -P CMakeFiles/trans_generate_messages_lisp.dir/cmake_clean.cmake
 .PHONY : trans/CMakeFiles/trans_generate_messages_lisp.dir/clean
 
 trans/CMakeFiles/trans_generate_messages_lisp.dir/depend:
-	cd /home/emnet/Desktop/Robotics/arm_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/emnet/Desktop/Robotics/arm_ws/src /home/emnet/Desktop/Robotics/arm_ws/src/trans /home/emnet/Desktop/Robotics/arm_ws/build /home/emnet/Desktop/Robotics/arm_ws/build/trans /home/emnet/Desktop/Robotics/arm_ws/build/trans/CMakeFiles/trans_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/arm_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/arm_ws/src /home/ubuntu/arm_ws/src/trans /home/ubuntu/arm_ws/build /home/ubuntu/arm_ws/build/trans /home/ubuntu/arm_ws/build/trans/CMakeFiles/trans_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : trans/CMakeFiles/trans_generate_messages_lisp.dir/depend
 
