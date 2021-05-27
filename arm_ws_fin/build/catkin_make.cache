@@ -1,0 +1,2 @@
+arm_description:arm_gazebo:arm_lib
+-DCATKIN_DEVEL_PREFIX=/home/bruktawit/arm_ws_fin/devel -DCMAKE_INSTALL_PREFIX=/home/bruktawit/arm_ws_fin/install -G Unix Makefiles
