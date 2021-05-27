@@ -12,6 +12,21 @@ namespace gazebo
 	class ModelPush : public ModelPlugin
 	{
 	public:
+			void anglesAssign(const arm_gazebo::joint_angles angles)
+		{
+			ROS_INFO("Received %f %f %f %f", angles.joint1, angles.joint2, angles.joint3, angles.joint4);
+			std::string chasis_arm1_joint= this->model->GetJoint("chasis_arm1_joint")->GetScopedName();
+			std::string arm1_arm2_joint = this->model->GetJoint("arm1_arm2_joint")->GetScopedName();
+			std::string arm2_arm3_joint = this->model->GetJoint("arm2_arm3_joint")->GetScopedName();
+			std::string arm3_arm4_joint = this->model->GetJoint("arm3_arm4_joint")->GetScopedName();
+
+			float radValue = M_PI/ 180.0;
+			this->jointController->SetPositionTarget(chasis_arm1_joint, angles.joint1 * radValue);
+			this->jointController->SetPositionTarget(arm1_arm2_joint, angles.joint2 * radValue);
+			this->jointController->SetPositionTarget(arm2_arm3_joint, angles.joint3 * radValue);
+			this->jointController->SetPositionTarget(arm3_arm4_joint, angles.joint4 * radValue);
+		}
+
 		void Load(physics::ModelPtr _parent, sdf::ElementPtr /*_sdf*/)
 		{
 			// Store the pointer to the model
@@ -33,6 +48,15 @@ namespace gazebo
 			// simulation iteration.
 			this->updateConnection = event::Events::ConnectWorldUpdateBegin(
 				std::bind(&ModelPush::OnUpdate, this));
+
+			int argc = 0;
+			char **argv = NULL;
+			ros::init(argc, argv, "controller");
+			ros::NodeHandle n;
+			
+			ros::Subscriber assign_angle = n.subscribe("joint_position", 1000, &ModelPush::anglesAssign, this);
+			ros::spinOnce();
+						
 		}
 
 	public:
@@ -85,6 +109,8 @@ namespace gazebo
 		// // 	// PID object
 	private:
 		common::PID pid;
+
+
 	};
 
 	// Register this plugin with the simulator
@@ -93,31 +119,4 @@ namespace gazebo
 
 }
 
-void assignCallback(const arm_gazebo::joint_angles angles)
-{
-  //arm_gazebo::controller::ModelPush x;
-  ROS_INFO("I heard: [%f]", angles.joint1);
-  ROS_INFO("I heard: [%f]", angles.joint2);
-  ROS_INFO("I heard: [%f]", angles.joint3);
-  ROS_INFO("I heard: [%f]", angles.joint4);
 
-
-    
-}
-
-	int main(int argc, char **argv)
-{
-
-    ros::init(argc, argv, "assign");
-
-    ros::NodeHandle n;
-
-    ros::Subscriber assign_sub = n.subscribe("joint_position", 1000, assignCallback);
-
-    ros::spin();
-    
-    return 0;
-
-
-
-}
