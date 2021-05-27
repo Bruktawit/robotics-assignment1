@@ -1,11 +1,9 @@
 (cl:defpackage trans-msg
   (:use )
   (:export
-   "<ARM_JOINT_ANGLES>"
-   "ARM_JOINT_ANGLES"
-   "<INPUT>"
-   "INPUT"
-   "<OUTPUT>"
-   "OUTPUT"
+   "<OUT_POSITION_ANGLE_DISTANCE>"
+   "OUT_POSITION_ANGLE_DISTANCE"
+   "<POSITION_ANGLE_DISTANCE>"
+   "POSITION_ANGLE_DISTANCE"
   ))
 

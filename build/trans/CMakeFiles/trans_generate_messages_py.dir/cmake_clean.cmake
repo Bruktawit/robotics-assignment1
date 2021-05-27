@@ -1,8 +1,7 @@
 file(REMOVE_RECURSE
   "/home/emnet/Desktop/Robotics/arm_ws/devel/lib/python3/dist-packages/trans/msg/__init__.py"
-  "/home/emnet/Desktop/Robotics/arm_ws/devel/lib/python3/dist-packages/trans/msg/_arm_joint_angles.py"
-  "/home/emnet/Desktop/Robotics/arm_ws/devel/lib/python3/dist-packages/trans/msg/_input.py"
-  "/home/emnet/Desktop/Robotics/arm_ws/devel/lib/python3/dist-packages/trans/msg/_output.py"
+  "/home/emnet/Desktop/Robotics/arm_ws/devel/lib/python3/dist-packages/trans/msg/_out_position_angle_distance.py"
+  "/home/emnet/Desktop/Robotics/arm_ws/devel/lib/python3/dist-packages/trans/msg/_position_angle_distance.py"
   "CMakeFiles/trans_generate_messages_py"
 )
 

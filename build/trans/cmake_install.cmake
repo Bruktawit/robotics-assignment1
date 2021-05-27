@@ -39,9 +39,8 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/trans/msg" TYPE FILE FILES
-    "/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/input.msg"
-    "/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/output.msg"
-    "/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/arm_joint_angles.msg"
+    "/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/position_angle_distance.msg"
+    "/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/out_position_angle_distance.msg"
     )
 endif()
 
@@ -90,13 +89,5 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/trans" TYPE FILE FILES "/home/emnet/Desktop/Robotics/arm_ws/src/trans/package.xml")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/trans" TYPE PROGRAM FILES "/home/emnet/Desktop/Robotics/arm_ws/build/trans/catkin_generated/installspace/publisher.py")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/trans" TYPE PROGRAM FILES "/home/emnet/Desktop/Robotics/arm_ws/build/trans/catkin_generated/installspace/listener.py")
 endif()
 

@@ -1,12 +1,10 @@
 
 "use strict";
 
-let arm_joint_angles = require('./arm_joint_angles.js');
-let input = require('./input.js');
-let output = require('./output.js');
+let out_position_angle_distance = require('./out_position_angle_distance.js');
+let position_angle_distance = require('./position_angle_distance.js');
 
 module.exports = {
-  arm_joint_angles: arm_joint_angles,
-  input: input,
-  output: output,
+  out_position_angle_distance: out_position_angle_distance,
+  position_angle_distance: position_angle_distance,
 };

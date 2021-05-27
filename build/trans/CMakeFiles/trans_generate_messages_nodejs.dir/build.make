@@ -53,30 +53,23 @@ CMAKE_BINARY_DIR = /home/emnet/Desktop/Robotics/arm_ws/build
 # Include the progress variables for this target.
 include trans/CMakeFiles/trans_generate_messages_nodejs.dir/progress.make
 
-trans/CMakeFiles/trans_generate_messages_nodejs: /home/emnet/Desktop/Robotics/arm_ws/devel/share/gennodejs/ros/trans/msg/input.js
-trans/CMakeFiles/trans_generate_messages_nodejs: /home/emnet/Desktop/Robotics/arm_ws/devel/share/gennodejs/ros/trans/msg/output.js
-trans/CMakeFiles/trans_generate_messages_nodejs: /home/emnet/Desktop/Robotics/arm_ws/devel/share/gennodejs/ros/trans/msg/arm_joint_angles.js
+trans/CMakeFiles/trans_generate_messages_nodejs: /home/emnet/Desktop/Robotics/arm_ws/devel/share/gennodejs/ros/trans/msg/position_angle_distance.js
+trans/CMakeFiles/trans_generate_messages_nodejs: /home/emnet/Desktop/Robotics/arm_ws/devel/share/gennodejs/ros/trans/msg/out_position_angle_distance.js
 
 
-/home/emnet/Desktop/Robotics/arm_ws/devel/share/gennodejs/ros/trans/msg/input.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
-/home/emnet/Desktop/Robotics/arm_ws/devel/share/gennodejs/ros/trans/msg/input.js: /home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/input.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/emnet/Desktop/Robotics/arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from trans/input.msg"
-	cd /home/emnet/Desktop/Robotics/arm_ws/build/trans && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/input.msg -Itrans:/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p trans -o /home/emnet/Desktop/Robotics/arm_ws/devel/share/gennodejs/ros/trans/msg
+/home/emnet/Desktop/Robotics/arm_ws/devel/share/gennodejs/ros/trans/msg/position_angle_distance.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
+/home/emnet/Desktop/Robotics/arm_ws/devel/share/gennodejs/ros/trans/msg/position_angle_distance.js: /home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/position_angle_distance.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/emnet/Desktop/Robotics/arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from trans/position_angle_distance.msg"
+	cd /home/emnet/Desktop/Robotics/arm_ws/build/trans && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/position_angle_distance.msg -Itrans:/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p trans -o /home/emnet/Desktop/Robotics/arm_ws/devel/share/gennodejs/ros/trans/msg
 
-/home/emnet/Desktop/Robotics/arm_ws/devel/share/gennodejs/ros/trans/msg/output.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
-/home/emnet/Desktop/Robotics/arm_ws/devel/share/gennodejs/ros/trans/msg/output.js: /home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/output.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/emnet/Desktop/Robotics/arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from trans/output.msg"
-	cd /home/emnet/Desktop/Robotics/arm_ws/build/trans && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/output.msg -Itrans:/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p trans -o /home/emnet/Desktop/Robotics/arm_ws/devel/share/gennodejs/ros/trans/msg
-
-/home/emnet/Desktop/Robotics/arm_ws/devel/share/gennodejs/ros/trans/msg/arm_joint_angles.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
-/home/emnet/Desktop/Robotics/arm_ws/devel/share/gennodejs/ros/trans/msg/arm_joint_angles.js: /home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/arm_joint_angles.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/emnet/Desktop/Robotics/arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Javascript code from trans/arm_joint_angles.msg"
-	cd /home/emnet/Desktop/Robotics/arm_ws/build/trans && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/arm_joint_angles.msg -Itrans:/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p trans -o /home/emnet/Desktop/Robotics/arm_ws/devel/share/gennodejs/ros/trans/msg
+/home/emnet/Desktop/Robotics/arm_ws/devel/share/gennodejs/ros/trans/msg/out_position_angle_distance.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
+/home/emnet/Desktop/Robotics/arm_ws/devel/share/gennodejs/ros/trans/msg/out_position_angle_distance.js: /home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/out_position_angle_distance.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/emnet/Desktop/Robotics/arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from trans/out_position_angle_distance.msg"
+	cd /home/emnet/Desktop/Robotics/arm_ws/build/trans && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/out_position_angle_distance.msg -Itrans:/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p trans -o /home/emnet/Desktop/Robotics/arm_ws/devel/share/gennodejs/ros/trans/msg
 
 trans_generate_messages_nodejs: trans/CMakeFiles/trans_generate_messages_nodejs
-trans_generate_messages_nodejs: /home/emnet/Desktop/Robotics/arm_ws/devel/share/gennodejs/ros/trans/msg/input.js
-trans_generate_messages_nodejs: /home/emnet/Desktop/Robotics/arm_ws/devel/share/gennodejs/ros/trans/msg/output.js
-trans_generate_messages_nodejs: /home/emnet/Desktop/Robotics/arm_ws/devel/share/gennodejs/ros/trans/msg/arm_joint_angles.js
+trans_generate_messages_nodejs: /home/emnet/Desktop/Robotics/arm_ws/devel/share/gennodejs/ros/trans/msg/position_angle_distance.js
+trans_generate_messages_nodejs: /home/emnet/Desktop/Robotics/arm_ws/devel/share/gennodejs/ros/trans/msg/out_position_angle_distance.js
 trans_generate_messages_nodejs: trans/CMakeFiles/trans_generate_messages_nodejs.dir/build.make
 
 .PHONY : trans_generate_messages_nodejs

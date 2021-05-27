@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
-messages_str = "/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/input.msg;/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/output.msg;/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/arm_joint_angles.msg"
+messages_str = "/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/position_angle_distance.msg;/home/emnet/Desktop/Robotics/arm_ws/src/trans/msg/out_position_angle_distance.msg"
 services_str = ""
 pkg_name = "trans"
 dependencies_str = "std_msgs"

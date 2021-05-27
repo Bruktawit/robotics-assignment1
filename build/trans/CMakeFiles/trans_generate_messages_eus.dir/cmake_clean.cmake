@@ -1,8 +1,7 @@
 file(REMOVE_RECURSE
   "/home/emnet/Desktop/Robotics/arm_ws/devel/share/roseus/ros/trans/manifest.l"
-  "/home/emnet/Desktop/Robotics/arm_ws/devel/share/roseus/ros/trans/msg/arm_joint_angles.l"
-  "/home/emnet/Desktop/Robotics/arm_ws/devel/share/roseus/ros/trans/msg/input.l"
-  "/home/emnet/Desktop/Robotics/arm_ws/devel/share/roseus/ros/trans/msg/output.l"
+  "/home/emnet/Desktop/Robotics/arm_ws/devel/share/roseus/ros/trans/msg/out_position_angle_distance.l"
+  "/home/emnet/Desktop/Robotics/arm_ws/devel/share/roseus/ros/trans/msg/position_angle_distance.l"
   "CMakeFiles/trans_generate_messages_eus"
 )
 

@@ -6,23 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/emnet/Desktop/Robotics/arm_ws/devel/include/trans/arm_joint_angles.h
-string
--
-vector
--
-map
--
-ros/types.h
--
-ros/serialization.h
--
-ros/builtin_message_traits.h
--
-ros/message_operations.h
--
-
-/home/emnet/Desktop/Robotics/arm_ws/devel/include/trans/input.h
+/home/emnet/Desktop/Robotics/arm_ws/devel/include/trans/position_angle_distance.h
 string
 -
 vector
@@ -43,11 +27,7 @@ ros/ros.h
 /home/emnet/Desktop/Robotics/arm_ws/src/trans/src/ros/ros.h
 std_msgs/String.h
 /home/emnet/Desktop/Robotics/arm_ws/src/trans/src/std_msgs/String.h
-trans/arm_joint_angles.h
-/home/emnet/Desktop/Robotics/arm_ws/src/trans/src/trans/arm_joint_angles.h
-trans/input.h
-/home/emnet/Desktop/Robotics/arm_ws/src/trans/src/trans/input.h
-stdlib.h
+trans/position_angle_distance.h
 -
 sstream
 -
