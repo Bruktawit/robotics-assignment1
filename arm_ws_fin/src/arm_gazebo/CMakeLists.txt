@@ -235,20 +235,13 @@ DEPENDS roscpp gazebo_ros arm_lib
 ## Build talker and listener
 ## include_directories(include ${catkin_INCLUDE_DIRS})
 
-add_executable(take src/take.cpp)
-target_link_libraries(take ${catkin_LIBRARIES})
-add_dependencies(take arm_gazebo_generate_messages_cpp)
+add_executable(take_angles src/take_angles.cpp)
+target_link_libraries(take_angles ${catkin_LIBRARIES})
+add_dependencies(take_angles arm_gazebo_generate_messages_cpp)
 
-add_executable(assign src/assign.cpp)
-target_link_libraries(assign ${catkin_LIBRARIES})
-add_dependencies(assign arm_gazebo_generate_messages_cpp)
-
-
-
-
-
-
-
+add_executable(print_position src/print_position.cpp)
+target_link_libraries(print_position ${catkin_LIBRARIES})
+add_dependencies(print_position arm_gazebo_generate_messages_cpp)
 
 
 

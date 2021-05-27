@@ -17,11 +17,11 @@ void assignCallback(const arm_gazebo::joint_angles angles)
 int main(int argc, char **argv)
 {
 
-    ros::init(argc, argv, "assign");
+    ros::init(argc, argv, "print_position");
 
     ros::NodeHandle n;
 
-    ros::Subscriber assign_sub = n.subscribe("joint_position", 1000, assignCallback);
+    ros::Subscriber assign_sub = n.subscribe("print_angles", 1000, assignCallback);
 
     ros::spin();
     

@@ -103,9 +103,9 @@ arm_description/clean: arm_description/CMakeFiles/_catkin_empty_exported_target.
 # Directory level rules for directory arm_gazebo
 
 # Recursive "all" directory target.
-arm_gazebo/all: arm_gazebo/CMakeFiles/assign.dir/all
+arm_gazebo/all: arm_gazebo/CMakeFiles/print_position.dir/all
+arm_gazebo/all: arm_gazebo/CMakeFiles/take_angles.dir/all
 arm_gazebo/all: arm_gazebo/CMakeFiles/arm_gazebo.dir/all
-arm_gazebo/all: arm_gazebo/CMakeFiles/take.dir/all
 arm_gazebo/all: arm_gazebo/CMakeFiles/arm_gazebo_generate_messages.dir/all
 
 .PHONY : arm_gazebo/all
@@ -116,8 +116,9 @@ arm_gazebo/preinstall:
 .PHONY : arm_gazebo/preinstall
 
 # Recursive "clean" directory target.
-arm_gazebo/clean: arm_gazebo/CMakeFiles/assign.dir/clean
+arm_gazebo/clean: arm_gazebo/CMakeFiles/print_position.dir/clean
 arm_gazebo/clean: arm_gazebo/CMakeFiles/arm_gazebo_genpy.dir/clean
+arm_gazebo/clean: arm_gazebo/CMakeFiles/take_angles.dir/clean
 arm_gazebo/clean: arm_gazebo/CMakeFiles/arm_gazebo_gennodejs.dir/clean
 arm_gazebo/clean: arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_nodejs.dir/clean
 arm_gazebo/clean: arm_gazebo/CMakeFiles/arm_gazebo_genlisp.dir/clean
@@ -167,7 +168,6 @@ arm_gazebo/clean: arm_gazebo/CMakeFiles/sensor_msgs_generate_messages_py.dir/cle
 arm_gazebo/clean: arm_gazebo/CMakeFiles/tf2_msgs_generate_messages_eus.dir/clean
 arm_gazebo/clean: arm_gazebo/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/clean
 arm_gazebo/clean: arm_gazebo/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/clean
-arm_gazebo/clean: arm_gazebo/CMakeFiles/take.dir/clean
 arm_gazebo/clean: arm_gazebo/CMakeFiles/_arm_gazebo_generate_messages_check_deps_joint_angles.dir/clean
 arm_gazebo/clean: arm_gazebo/CMakeFiles/dynamic_reconfigure_gencfg.dir/clean
 arm_gazebo/clean: arm_gazebo/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/clean
@@ -419,7 +419,7 @@ gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googlemock/CMakeFiles/gmoc
 gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bruktawit/arm_ws_fin/build/CMakeFiles --progress-num=19,20 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bruktawit/arm_ws_fin/build/CMakeFiles --progress-num=17,18 "Built target gmock_main"
 .PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -446,7 +446,7 @@ gtest/googlemock/CMakeFiles/gmock_main.dir/clean:
 gtest/googlemock/CMakeFiles/gmock.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bruktawit/arm_ws_fin/build/CMakeFiles --progress-num=17,18 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bruktawit/arm_ws_fin/build/CMakeFiles --progress-num=15,16 "Built target gmock"
 .PHONY : gtest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -473,7 +473,7 @@ gtest/googlemock/CMakeFiles/gmock.dir/clean:
 gtest/googletest/CMakeFiles/gtest_main.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bruktawit/arm_ws_fin/build/CMakeFiles --progress-num=23,24 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bruktawit/arm_ws_fin/build/CMakeFiles --progress-num=21,22 "Built target gtest_main"
 .PHONY : gtest/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -500,7 +500,7 @@ gtest/googletest/CMakeFiles/gtest_main.dir/clean:
 gtest/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bruktawit/arm_ws_fin/build/CMakeFiles --progress-num=21,22 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bruktawit/arm_ws_fin/build/CMakeFiles --progress-num=19,20 "Built target gtest"
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -953,31 +953,31 @@ arm_lib/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
 .PHONY : arm_lib/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 
 #=============================================================================
-# Target rules for target arm_gazebo/CMakeFiles/assign.dir
+# Target rules for target arm_gazebo/CMakeFiles/print_position.dir
 
 # All Build rule for target.
-arm_gazebo/CMakeFiles/assign.dir/all: arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_cpp.dir/all
-	$(MAKE) -f arm_gazebo/CMakeFiles/assign.dir/build.make arm_gazebo/CMakeFiles/assign.dir/depend
-	$(MAKE) -f arm_gazebo/CMakeFiles/assign.dir/build.make arm_gazebo/CMakeFiles/assign.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bruktawit/arm_ws_fin/build/CMakeFiles --progress-num=15,16 "Built target assign"
-.PHONY : arm_gazebo/CMakeFiles/assign.dir/all
+arm_gazebo/CMakeFiles/print_position.dir/all: arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_cpp.dir/all
+	$(MAKE) -f arm_gazebo/CMakeFiles/print_position.dir/build.make arm_gazebo/CMakeFiles/print_position.dir/depend
+	$(MAKE) -f arm_gazebo/CMakeFiles/print_position.dir/build.make arm_gazebo/CMakeFiles/print_position.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bruktawit/arm_ws_fin/build/CMakeFiles --progress-num=23,24 "Built target print_position"
+.PHONY : arm_gazebo/CMakeFiles/print_position.dir/all
 
 # Build rule for subdir invocation for target.
-arm_gazebo/CMakeFiles/assign.dir/rule: cmake_check_build_system
+arm_gazebo/CMakeFiles/print_position.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bruktawit/arm_ws_fin/build/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 arm_gazebo/CMakeFiles/assign.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 arm_gazebo/CMakeFiles/print_position.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bruktawit/arm_ws_fin/build/CMakeFiles 0
-.PHONY : arm_gazebo/CMakeFiles/assign.dir/rule
+.PHONY : arm_gazebo/CMakeFiles/print_position.dir/rule
 
 # Convenience name for target.
-assign: arm_gazebo/CMakeFiles/assign.dir/rule
+print_position: arm_gazebo/CMakeFiles/print_position.dir/rule
 
-.PHONY : assign
+.PHONY : print_position
 
 # clean rule for target.
-arm_gazebo/CMakeFiles/assign.dir/clean:
-	$(MAKE) -f arm_gazebo/CMakeFiles/assign.dir/build.make arm_gazebo/CMakeFiles/assign.dir/clean
-.PHONY : arm_gazebo/CMakeFiles/assign.dir/clean
+arm_gazebo/CMakeFiles/print_position.dir/clean:
+	$(MAKE) -f arm_gazebo/CMakeFiles/print_position.dir/build.make arm_gazebo/CMakeFiles/print_position.dir/clean
+.PHONY : arm_gazebo/CMakeFiles/print_position.dir/clean
 
 #=============================================================================
 # Target rules for target arm_gazebo/CMakeFiles/arm_gazebo_genpy.dir
@@ -1005,6 +1005,33 @@ arm_gazebo_genpy: arm_gazebo/CMakeFiles/arm_gazebo_genpy.dir/rule
 arm_gazebo/CMakeFiles/arm_gazebo_genpy.dir/clean:
 	$(MAKE) -f arm_gazebo/CMakeFiles/arm_gazebo_genpy.dir/build.make arm_gazebo/CMakeFiles/arm_gazebo_genpy.dir/clean
 .PHONY : arm_gazebo/CMakeFiles/arm_gazebo_genpy.dir/clean
+
+#=============================================================================
+# Target rules for target arm_gazebo/CMakeFiles/take_angles.dir
+
+# All Build rule for target.
+arm_gazebo/CMakeFiles/take_angles.dir/all: arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_cpp.dir/all
+	$(MAKE) -f arm_gazebo/CMakeFiles/take_angles.dir/build.make arm_gazebo/CMakeFiles/take_angles.dir/depend
+	$(MAKE) -f arm_gazebo/CMakeFiles/take_angles.dir/build.make arm_gazebo/CMakeFiles/take_angles.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bruktawit/arm_ws_fin/build/CMakeFiles --progress-num=25,26 "Built target take_angles"
+.PHONY : arm_gazebo/CMakeFiles/take_angles.dir/all
+
+# Build rule for subdir invocation for target.
+arm_gazebo/CMakeFiles/take_angles.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bruktawit/arm_ws_fin/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 arm_gazebo/CMakeFiles/take_angles.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bruktawit/arm_ws_fin/build/CMakeFiles 0
+.PHONY : arm_gazebo/CMakeFiles/take_angles.dir/rule
+
+# Convenience name for target.
+take_angles: arm_gazebo/CMakeFiles/take_angles.dir/rule
+
+.PHONY : take_angles
+
+# clean rule for target.
+arm_gazebo/CMakeFiles/take_angles.dir/clean:
+	$(MAKE) -f arm_gazebo/CMakeFiles/take_angles.dir/build.make arm_gazebo/CMakeFiles/take_angles.dir/clean
+.PHONY : arm_gazebo/CMakeFiles/take_angles.dir/clean
 
 #=============================================================================
 # Target rules for target arm_gazebo/CMakeFiles/arm_gazebo_gennodejs.dir
@@ -2336,33 +2363,6 @@ tf2_msgs_generate_messages_nodejs: arm_gazebo/CMakeFiles/tf2_msgs_generate_messa
 arm_gazebo/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/clean:
 	$(MAKE) -f arm_gazebo/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build.make arm_gazebo/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/clean
 .PHONY : arm_gazebo/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/clean
-
-#=============================================================================
-# Target rules for target arm_gazebo/CMakeFiles/take.dir
-
-# All Build rule for target.
-arm_gazebo/CMakeFiles/take.dir/all: arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_cpp.dir/all
-	$(MAKE) -f arm_gazebo/CMakeFiles/take.dir/build.make arm_gazebo/CMakeFiles/take.dir/depend
-	$(MAKE) -f arm_gazebo/CMakeFiles/take.dir/build.make arm_gazebo/CMakeFiles/take.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bruktawit/arm_ws_fin/build/CMakeFiles --progress-num=25,26 "Built target take"
-.PHONY : arm_gazebo/CMakeFiles/take.dir/all
-
-# Build rule for subdir invocation for target.
-arm_gazebo/CMakeFiles/take.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bruktawit/arm_ws_fin/build/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 arm_gazebo/CMakeFiles/take.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bruktawit/arm_ws_fin/build/CMakeFiles 0
-.PHONY : arm_gazebo/CMakeFiles/take.dir/rule
-
-# Convenience name for target.
-take: arm_gazebo/CMakeFiles/take.dir/rule
-
-.PHONY : take
-
-# clean rule for target.
-arm_gazebo/CMakeFiles/take.dir/clean:
-	$(MAKE) -f arm_gazebo/CMakeFiles/take.dir/build.make arm_gazebo/CMakeFiles/take.dir/clean
-.PHONY : arm_gazebo/CMakeFiles/take.dir/clean
 
 #=============================================================================
 # Target rules for target arm_gazebo/CMakeFiles/_arm_gazebo_generate_messages_check_deps_joint_angles.dir

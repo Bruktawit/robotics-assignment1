@@ -493,17 +493,17 @@ rosgraph_msgs_generate_messages_py/fast:
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 #=============================================================================
-# Target rules for targets named assign
+# Target rules for targets named print_position
 
 # Build rule for target.
-assign: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 assign
-.PHONY : assign
+print_position: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 print_position
+.PHONY : print_position
 
 # fast build rule for target.
-assign/fast:
-	$(MAKE) -f arm_gazebo/CMakeFiles/assign.dir/build.make arm_gazebo/CMakeFiles/assign.dir/build
-.PHONY : assign/fast
+print_position/fast:
+	$(MAKE) -f arm_gazebo/CMakeFiles/print_position.dir/build.make arm_gazebo/CMakeFiles/print_position.dir/build
+.PHONY : print_position/fast
 
 #=============================================================================
 # Target rules for targets named arm_gazebo_genpy
@@ -517,6 +517,19 @@ arm_gazebo_genpy: cmake_check_build_system
 arm_gazebo_genpy/fast:
 	$(MAKE) -f arm_gazebo/CMakeFiles/arm_gazebo_genpy.dir/build.make arm_gazebo/CMakeFiles/arm_gazebo_genpy.dir/build
 .PHONY : arm_gazebo_genpy/fast
+
+#=============================================================================
+# Target rules for targets named take_angles
+
+# Build rule for target.
+take_angles: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 take_angles
+.PHONY : take_angles
+
+# fast build rule for target.
+take_angles/fast:
+	$(MAKE) -f arm_gazebo/CMakeFiles/take_angles.dir/build.make arm_gazebo/CMakeFiles/take_angles.dir/build
+.PHONY : take_angles/fast
 
 #=============================================================================
 # Target rules for targets named arm_gazebo_gennodejs
@@ -1156,19 +1169,6 @@ tf2_msgs_generate_messages_nodejs/fast:
 .PHONY : tf2_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
-# Target rules for targets named take
-
-# Build rule for target.
-take: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 take
-.PHONY : take
-
-# fast build rule for target.
-take/fast:
-	$(MAKE) -f arm_gazebo/CMakeFiles/take.dir/build.make arm_gazebo/CMakeFiles/take.dir/build
-.PHONY : take/fast
-
-#=============================================================================
 # Target rules for targets named _arm_gazebo_generate_messages_check_deps_joint_angles
 
 # Build rule for target.
@@ -1414,8 +1414,9 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
-	@echo "... assign"
+	@echo "... print_position"
 	@echo "... arm_gazebo_genpy"
+	@echo "... take_angles"
 	@echo "... arm_gazebo_gennodejs"
 	@echo "... arm_gazebo_generate_messages_nodejs"
 	@echo "... arm_gazebo_genlisp"
@@ -1465,7 +1466,6 @@ help:
 	@echo "... tf2_msgs_generate_messages_eus"
 	@echo "... tf2_msgs_generate_messages_lisp"
 	@echo "... tf2_msgs_generate_messages_nodejs"
-	@echo "... take"
 	@echo "... _arm_gazebo_generate_messages_check_deps_joint_angles"
 	@echo "... dynamic_reconfigure_gencfg"
 	@echo "... actionlib_msgs_generate_messages_eus"

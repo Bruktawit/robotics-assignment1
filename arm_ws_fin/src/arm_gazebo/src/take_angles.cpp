@@ -38,6 +38,7 @@ int main(int argc, char **argv)
     angles.joint4 = joint4;
     
     take_pub.publish(angles);
+    
   }
     return 0;
 

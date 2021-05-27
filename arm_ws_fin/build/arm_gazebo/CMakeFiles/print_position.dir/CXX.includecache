@@ -22,13 +22,11 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/bruktawit/arm_ws_fin/src/arm_gazebo/src/take_angles.cpp
+/home/bruktawit/arm_ws_fin/src/arm_gazebo/src/print_position.cpp
 ros/ros.h
 /home/bruktawit/arm_ws_fin/src/arm_gazebo/src/ros/ros.h
 arm_gazebo/joint_angles.h
 /home/bruktawit/arm_ws_fin/src/arm_gazebo/src/arm_gazebo/joint_angles.h
-stdio.h
--
 
 /opt/ros/noetic/include/ros/advertise_options.h
 ros/forwards.h

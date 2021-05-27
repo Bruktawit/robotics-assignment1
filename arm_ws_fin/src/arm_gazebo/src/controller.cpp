@@ -14,7 +14,7 @@ namespace gazebo
 	public:
 			void anglesAssign(const arm_gazebo::joint_angles angles)
 		{
-			ROS_INFO("Received %f %f %f %f", angles.joint1, angles.joint2, angles.joint3, angles.joint4);
+			
 			std::string chasis_arm1_joint= this->model->GetJoint("chasis_arm1_joint")->GetScopedName();
 			std::string arm1_arm2_joint = this->model->GetJoint("arm1_arm2_joint")->GetScopedName();
 			std::string arm2_arm3_joint = this->model->GetJoint("arm2_arm3_joint")->GetScopedName();
@@ -25,6 +25,7 @@ namespace gazebo
 			this->jointController->SetPositionTarget(arm1_arm2_joint, angles.joint2 * radValue);
 			this->jointController->SetPositionTarget(arm2_arm3_joint, angles.joint3 * radValue);
 			this->jointController->SetPositionTarget(arm3_arm4_joint, angles.joint4 * radValue);
+			
 		}
 
 		void Load(physics::ModelPtr _parent, sdf::ElementPtr /*_sdf*/)
@@ -52,9 +53,8 @@ namespace gazebo
 			int argc = 0;
 			char **argv = NULL;
 			ros::init(argc, argv, "controller");
-			ros::NodeHandle n;
-			
-			ros::Subscriber assign_angle = n.subscribe("joint_position", 1000, &ModelPush::anglesAssign, this);
+			pub = n.advertise<arm_gazebo::joint_angles>("print_angles",100);
+			sub = n.subscribe("joint_position", 1000, &ModelPush::anglesAssign, this);
 			ros::spinOnce();
 						
 		}
@@ -85,12 +85,21 @@ namespace gazebo
 			double a3 = physics::JointState(this->model->GetJoint("arm2_arm3_joint")).Position(0);
 			double a4 = physics::JointState(this->model->GetJoint("arm3_arm4_joint")).Position(0);
 			
+			arm_gazebo::joint_angles angles;
+
+			angles.joint1 = a1;
+    		angles.joint2 = a2;
+    		angles.joint3 = a3;
+    		angles.joint4 = a4;
+    
+    		this->pub.publish(angles);
+			ros::spinOnce();
 			// double a2 = this->model->GetJoint("chasis_arm1_joint").Position(0);
 			// double a3 = physics::JointState(this->model->GetJoint("chasis_arm1_joint")).Position(2);
-			std::cout << "Current chasis_arm1_joint values: " << a1 * 180.0 / M_PI << std::endl;
-			std::cout << "Current arm1_arm2_joint values: " << a2 * 180.0 / M_PI << std::endl;
-			std::cout << "Current arm2_arm3_joint values: " << a3 * 180.0 / M_PI << std::endl;
-			std::cout << "Current arm3_arm4_joint values: " << a4 * 180.0 / M_PI << std::endl;
+			// std::cout << "Current chasis_arm1_joint values: " << a1 * 180.0 / M_PI << std::endl;
+			//std::cout << "Current arm1_arm2_joint values: " << a2 * 180.0 / M_PI << std::endl;
+			//std::cout << "Current arm2_arm3_joint values: " << a3 * 180.0 / M_PI << std::endl;
+			//std::cout << "Current arm3_arm4_joint values: " << a4 * 180.0 / M_PI << std::endl;
 		}
 
 		// a pointer that points to a model object
@@ -110,6 +119,10 @@ namespace gazebo
 	private:
 		common::PID pid;
 
+	private:
+		ros::Publisher pub;
+		ros::NodeHandle n;
+		ros::Subscriber sub;
 
 	};
 
@@ -118,5 +131,4 @@ namespace gazebo
 
 
 }
-
 

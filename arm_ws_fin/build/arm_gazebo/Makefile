@@ -168,19 +168,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-arm_gazebo/CMakeFiles/assign.dir/rule:
-	cd /home/bruktawit/arm_ws_fin/build && $(MAKE) -f CMakeFiles/Makefile2 arm_gazebo/CMakeFiles/assign.dir/rule
-.PHONY : arm_gazebo/CMakeFiles/assign.dir/rule
+arm_gazebo/CMakeFiles/print_position.dir/rule:
+	cd /home/bruktawit/arm_ws_fin/build && $(MAKE) -f CMakeFiles/Makefile2 arm_gazebo/CMakeFiles/print_position.dir/rule
+.PHONY : arm_gazebo/CMakeFiles/print_position.dir/rule
 
 # Convenience name for target.
-assign: arm_gazebo/CMakeFiles/assign.dir/rule
+print_position: arm_gazebo/CMakeFiles/print_position.dir/rule
 
-.PHONY : assign
+.PHONY : print_position
 
 # fast build rule for target.
-assign/fast:
-	cd /home/bruktawit/arm_ws_fin/build && $(MAKE) -f arm_gazebo/CMakeFiles/assign.dir/build.make arm_gazebo/CMakeFiles/assign.dir/build
-.PHONY : assign/fast
+print_position/fast:
+	cd /home/bruktawit/arm_ws_fin/build && $(MAKE) -f arm_gazebo/CMakeFiles/print_position.dir/build.make arm_gazebo/CMakeFiles/print_position.dir/build
+.PHONY : print_position/fast
 
 # Convenience name for target.
 arm_gazebo/CMakeFiles/arm_gazebo_genpy.dir/rule:
@@ -196,6 +196,21 @@ arm_gazebo_genpy: arm_gazebo/CMakeFiles/arm_gazebo_genpy.dir/rule
 arm_gazebo_genpy/fast:
 	cd /home/bruktawit/arm_ws_fin/build && $(MAKE) -f arm_gazebo/CMakeFiles/arm_gazebo_genpy.dir/build.make arm_gazebo/CMakeFiles/arm_gazebo_genpy.dir/build
 .PHONY : arm_gazebo_genpy/fast
+
+# Convenience name for target.
+arm_gazebo/CMakeFiles/take_angles.dir/rule:
+	cd /home/bruktawit/arm_ws_fin/build && $(MAKE) -f CMakeFiles/Makefile2 arm_gazebo/CMakeFiles/take_angles.dir/rule
+.PHONY : arm_gazebo/CMakeFiles/take_angles.dir/rule
+
+# Convenience name for target.
+take_angles: arm_gazebo/CMakeFiles/take_angles.dir/rule
+
+.PHONY : take_angles
+
+# fast build rule for target.
+take_angles/fast:
+	cd /home/bruktawit/arm_ws_fin/build && $(MAKE) -f arm_gazebo/CMakeFiles/take_angles.dir/build.make arm_gazebo/CMakeFiles/take_angles.dir/build
+.PHONY : take_angles/fast
 
 # Convenience name for target.
 arm_gazebo/CMakeFiles/arm_gazebo_gennodejs.dir/rule:
@@ -933,21 +948,6 @@ tf2_msgs_generate_messages_nodejs/fast:
 .PHONY : tf2_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
-arm_gazebo/CMakeFiles/take.dir/rule:
-	cd /home/bruktawit/arm_ws_fin/build && $(MAKE) -f CMakeFiles/Makefile2 arm_gazebo/CMakeFiles/take.dir/rule
-.PHONY : arm_gazebo/CMakeFiles/take.dir/rule
-
-# Convenience name for target.
-take: arm_gazebo/CMakeFiles/take.dir/rule
-
-.PHONY : take
-
-# fast build rule for target.
-take/fast:
-	cd /home/bruktawit/arm_ws_fin/build && $(MAKE) -f arm_gazebo/CMakeFiles/take.dir/build.make arm_gazebo/CMakeFiles/take.dir/build
-.PHONY : take/fast
-
-# Convenience name for target.
 arm_gazebo/CMakeFiles/_arm_gazebo_generate_messages_check_deps_joint_angles.dir/rule:
 	cd /home/bruktawit/arm_ws_fin/build && $(MAKE) -f CMakeFiles/Makefile2 arm_gazebo/CMakeFiles/_arm_gazebo_generate_messages_check_deps_joint_angles.dir/rule
 .PHONY : arm_gazebo/CMakeFiles/_arm_gazebo_generate_messages_check_deps_joint_angles.dir/rule
@@ -1187,33 +1187,6 @@ arm_gazebo_generate_messages_eus/fast:
 	cd /home/bruktawit/arm_ws_fin/build && $(MAKE) -f arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_eus.dir/build.make arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_eus.dir/build
 .PHONY : arm_gazebo_generate_messages_eus/fast
 
-src/assign.o: src/assign.cpp.o
-
-.PHONY : src/assign.o
-
-# target to build an object file
-src/assign.cpp.o:
-	cd /home/bruktawit/arm_ws_fin/build && $(MAKE) -f arm_gazebo/CMakeFiles/assign.dir/build.make arm_gazebo/CMakeFiles/assign.dir/src/assign.cpp.o
-.PHONY : src/assign.cpp.o
-
-src/assign.i: src/assign.cpp.i
-
-.PHONY : src/assign.i
-
-# target to preprocess a source file
-src/assign.cpp.i:
-	cd /home/bruktawit/arm_ws_fin/build && $(MAKE) -f arm_gazebo/CMakeFiles/assign.dir/build.make arm_gazebo/CMakeFiles/assign.dir/src/assign.cpp.i
-.PHONY : src/assign.cpp.i
-
-src/assign.s: src/assign.cpp.s
-
-.PHONY : src/assign.s
-
-# target to generate assembly for a file
-src/assign.cpp.s:
-	cd /home/bruktawit/arm_ws_fin/build && $(MAKE) -f arm_gazebo/CMakeFiles/assign.dir/build.make arm_gazebo/CMakeFiles/assign.dir/src/assign.cpp.s
-.PHONY : src/assign.cpp.s
-
 src/controller.o: src/controller.cpp.o
 
 .PHONY : src/controller.o
@@ -1241,32 +1214,59 @@ src/controller.cpp.s:
 	cd /home/bruktawit/arm_ws_fin/build && $(MAKE) -f arm_gazebo/CMakeFiles/arm_gazebo.dir/build.make arm_gazebo/CMakeFiles/arm_gazebo.dir/src/controller.cpp.s
 .PHONY : src/controller.cpp.s
 
-src/take.o: src/take.cpp.o
+src/print_position.o: src/print_position.cpp.o
 
-.PHONY : src/take.o
+.PHONY : src/print_position.o
 
 # target to build an object file
-src/take.cpp.o:
-	cd /home/bruktawit/arm_ws_fin/build && $(MAKE) -f arm_gazebo/CMakeFiles/take.dir/build.make arm_gazebo/CMakeFiles/take.dir/src/take.cpp.o
-.PHONY : src/take.cpp.o
+src/print_position.cpp.o:
+	cd /home/bruktawit/arm_ws_fin/build && $(MAKE) -f arm_gazebo/CMakeFiles/print_position.dir/build.make arm_gazebo/CMakeFiles/print_position.dir/src/print_position.cpp.o
+.PHONY : src/print_position.cpp.o
 
-src/take.i: src/take.cpp.i
+src/print_position.i: src/print_position.cpp.i
 
-.PHONY : src/take.i
+.PHONY : src/print_position.i
 
 # target to preprocess a source file
-src/take.cpp.i:
-	cd /home/bruktawit/arm_ws_fin/build && $(MAKE) -f arm_gazebo/CMakeFiles/take.dir/build.make arm_gazebo/CMakeFiles/take.dir/src/take.cpp.i
-.PHONY : src/take.cpp.i
+src/print_position.cpp.i:
+	cd /home/bruktawit/arm_ws_fin/build && $(MAKE) -f arm_gazebo/CMakeFiles/print_position.dir/build.make arm_gazebo/CMakeFiles/print_position.dir/src/print_position.cpp.i
+.PHONY : src/print_position.cpp.i
 
-src/take.s: src/take.cpp.s
+src/print_position.s: src/print_position.cpp.s
 
-.PHONY : src/take.s
+.PHONY : src/print_position.s
 
 # target to generate assembly for a file
-src/take.cpp.s:
-	cd /home/bruktawit/arm_ws_fin/build && $(MAKE) -f arm_gazebo/CMakeFiles/take.dir/build.make arm_gazebo/CMakeFiles/take.dir/src/take.cpp.s
-.PHONY : src/take.cpp.s
+src/print_position.cpp.s:
+	cd /home/bruktawit/arm_ws_fin/build && $(MAKE) -f arm_gazebo/CMakeFiles/print_position.dir/build.make arm_gazebo/CMakeFiles/print_position.dir/src/print_position.cpp.s
+.PHONY : src/print_position.cpp.s
+
+src/take_angles.o: src/take_angles.cpp.o
+
+.PHONY : src/take_angles.o
+
+# target to build an object file
+src/take_angles.cpp.o:
+	cd /home/bruktawit/arm_ws_fin/build && $(MAKE) -f arm_gazebo/CMakeFiles/take_angles.dir/build.make arm_gazebo/CMakeFiles/take_angles.dir/src/take_angles.cpp.o
+.PHONY : src/take_angles.cpp.o
+
+src/take_angles.i: src/take_angles.cpp.i
+
+.PHONY : src/take_angles.i
+
+# target to preprocess a source file
+src/take_angles.cpp.i:
+	cd /home/bruktawit/arm_ws_fin/build && $(MAKE) -f arm_gazebo/CMakeFiles/take_angles.dir/build.make arm_gazebo/CMakeFiles/take_angles.dir/src/take_angles.cpp.i
+.PHONY : src/take_angles.cpp.i
+
+src/take_angles.s: src/take_angles.cpp.s
+
+.PHONY : src/take_angles.s
+
+# target to generate assembly for a file
+src/take_angles.cpp.s:
+	cd /home/bruktawit/arm_ws_fin/build && $(MAKE) -f arm_gazebo/CMakeFiles/take_angles.dir/build.make arm_gazebo/CMakeFiles/take_angles.dir/src/take_angles.cpp.s
+.PHONY : src/take_angles.cpp.s
 
 # Help Target
 help:
@@ -1279,9 +1279,10 @@ help:
 	@echo "... install"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... assign"
+	@echo "... print_position"
 	@echo "... list_install_components"
 	@echo "... arm_gazebo_genpy"
+	@echo "... take_angles"
 	@echo "... arm_gazebo_gennodejs"
 	@echo "... arm_gazebo_generate_messages_nodejs"
 	@echo "... arm_gazebo_genlisp"
@@ -1332,7 +1333,6 @@ help:
 	@echo "... tf2_msgs_generate_messages_eus"
 	@echo "... tf2_msgs_generate_messages_lisp"
 	@echo "... tf2_msgs_generate_messages_nodejs"
-	@echo "... take"
 	@echo "... _arm_gazebo_generate_messages_check_deps_joint_angles"
 	@echo "... dynamic_reconfigure_gencfg"
 	@echo "... actionlib_msgs_generate_messages_eus"
@@ -1349,15 +1349,15 @@ help:
 	@echo "... actionlib_generate_messages_cpp"
 	@echo "... arm_gazebo_generate_messages"
 	@echo "... arm_gazebo_generate_messages_eus"
-	@echo "... src/assign.o"
-	@echo "... src/assign.i"
-	@echo "... src/assign.s"
 	@echo "... src/controller.o"
 	@echo "... src/controller.i"
 	@echo "... src/controller.s"
-	@echo "... src/take.o"
-	@echo "... src/take.i"
-	@echo "... src/take.s"
+	@echo "... src/print_position.o"
+	@echo "... src/print_position.i"
+	@echo "... src/print_position.s"
+	@echo "... src/take_angles.o"
+	@echo "... src/take_angles.i"
+	@echo "... src/take_angles.s"
 .PHONY : help
 
 
