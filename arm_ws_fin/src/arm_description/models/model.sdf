@@ -314,7 +314,7 @@
     </joint>
      <joint name="arm5_arm6_joint" type="revolute">
        <parent>arm5</parent>
-       <child>palm</child>
+       <child>arm6</child>
        <pose>0 0 -0.1 0 0 0</pose>
         <axis>
                 <xyz> 1 0 0  </xyz>
@@ -330,8 +330,8 @@
     </joint>
      <joint name="arm6_arm7_joint" type="revolute">
             <pose>0 0 -0.15 0 0</pose>
-            <child>left_finger</child>
-            <parent>palm</parent>
+            <child>arm7</child>
+            <parent>arm6</parent>
             <xyz> 1 0 0</xyz>
                 <dynamics>
                     <damping>1.0</damping>
@@ -346,8 +346,8 @@
             </joint>
       <joint name="arm6_arm8_joint" type="revolute">
             <pose>0 0 -0.15 0 0</pose>
-            <child>right_finger</child>
-            <parent>palm</parent>
+            <child>arm8</child>
+            <parent>arm6</parent>
            <axis>
                 <xyz> 1 0 0 </xyz>
                 <dynamics>
