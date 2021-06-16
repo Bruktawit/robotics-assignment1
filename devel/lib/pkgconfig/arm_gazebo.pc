@@ -1,0 +1,8 @@
+prefix=/home/bruktawit/arm_ws_fin/devel
+
+Name: arm_gazebo
+Description: Description of arm_gazebo
+Version: 0.0.0
+Cflags: -I/home/bruktawit/arm_ws_fin/devel/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime arm_lib roscpp rospy std_msgs roscpp gazebo_ros arm_lib
