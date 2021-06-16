@@ -19,7 +19,7 @@ namespace gazebo
 		void commandCallback(const arm_lib::input_command &msg)
 		{
 
-			ROS_INFO("Received %s", msg.command_name.c_str());
+			ROS_INFO(msg.command_name.c_str());
 
 			std::string command = msg.command_name;
 
@@ -28,17 +28,17 @@ namespace gazebo
 
 			if (command == "catch")
 			{
-				this->jointController->SetPositionTarget(arm6_arm8, -0.4);
-				this->jointController->SetPositionTarget(arm6_arm7, 0.4);
+				this->jointController->SetPositionTarget(palm_right_finger, -.6);
+				this->jointController->SetPositionTarget(palm_left_finger, .6);
 			}
 			else if (command == "release")
 			{
-				this->jointController->SetPositionTarget(arm6_arm8, 0.7);
-				this->jointController->SetPositionTarget(arm6_arm7, -0.7);
+				this->jointController->SetPositionTarget(palm_right_finger, .3);
+				this->jointController->SetPositionTarget(palm_right_finger, -.3);
 			}
 		}
 
-		void Load(physics::ModelPtr _parent, sdf::ElementPtr /*_sdf*/)
+		void Load(physics::ModelPtr _parent, sdf::ElementPtr )
 		{
 			this->model = _parent;
 			this->jointController = this->model->GetJointController();

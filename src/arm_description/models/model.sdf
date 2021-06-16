@@ -133,7 +133,7 @@
             </visual> 
     
     </link>
-     <link name="palm">
+     <link name="arm6">
       <gravity>0</gravity>
             <pose>0.0 0.0 3.75 0 0 0</pose>
             <inertial>
@@ -158,7 +158,7 @@
                 </material>
             </visual>
         </link>
-        <link name="left_finger">
+        <link name="arm7">
         <gravity>0</gravity>
             <pose>0.1 0.2 3.75 0 0 -0.78539</pose>
             <inertial>
@@ -193,7 +193,7 @@
                
             </visual>
         </link>
-        <link name="right_finger">
+        <link name="arm8">
         <gravity>0</gravity>
             <pose>0.1 -0.2 3.75 0 0 .78539</pose>
             <inertial>
@@ -312,9 +312,9 @@
                 </limit>
             </axis>
     </joint>
-     <joint name="arm5_palm_joint" type="revolute">
+     <joint name="arm5_arm6_joint" type="revolute">
        <parent>arm5</parent>
-       <child>palm</child>
+       <child>arm6</child>
        <pose>0 0 -0.1 0 0 0</pose>
         <axis>
                 <xyz> 1 0 0  </xyz>
@@ -328,10 +328,10 @@
                 </limit>
             </axis>
     </joint>
-     <joint name="palm_left_finger" type="revolute">
+     <joint name="arm6_arm7_joint" type="revolute">
             <pose>0 0 -0.15 0 0</pose>
-            <child>left_finger</child>
-            <parent>palm</parent>
+            <child>arm7</child>
+            <parent>arm6</parent>
             <xyz> 1 0 0</xyz>
                 <dynamics>
                     <damping>1.0</damping>
@@ -344,10 +344,10 @@
                     <velocity>1.0</velocity>
                 </limit>
             </joint>
-      <joint name="palm_right_finger" type="revolute">
+      <joint name="arm6_arm8_joint" type="revolute">
             <pose>0 0 -0.15 0 0</pose>
-            <child>right_finger</child>
-            <parent>palm</parent>
+            <child>arm8</child>
+            <parent>arm6</parent>
            <axis>
                 <xyz> 1 0 0 </xyz>
                 <dynamics>

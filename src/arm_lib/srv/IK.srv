@@ -1,3 +1,0 @@
-float32[] current_angles
-float32[] new_angles
-float32[] actuator_pose
