@@ -55,6 +55,8 @@ include arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_cpp.dir/progress.make
 
 arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_cpp: /home/bruktawit/arm_ws_fin/devel/include/arm_gazebo/joint_angles.h
 arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_cpp: /home/bruktawit/arm_ws_fin/devel/include/arm_gazebo/vector.h
+arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_cpp: /home/bruktawit/arm_ws_fin/devel/include/arm_gazebo/FK.h
+arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_cpp: /home/bruktawit/arm_ws_fin/devel/include/arm_gazebo/IK.h
 
 
 /home/bruktawit/arm_ws_fin/devel/include/arm_gazebo/joint_angles.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
@@ -69,9 +71,25 @@ arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_cpp: /home/bruktawit/arm_ws_f
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bruktawit/arm_ws_fin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from arm_gazebo/vector.msg"
 	cd /home/bruktawit/arm_ws_fin/src/arm_gazebo && /home/bruktawit/arm_ws_fin/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/bruktawit/arm_ws_fin/src/arm_gazebo/msg/vector.msg -Iarm_gazebo:/home/bruktawit/arm_ws_fin/src/arm_gazebo/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p arm_gazebo -o /home/bruktawit/arm_ws_fin/devel/include/arm_gazebo -e /opt/ros/noetic/share/gencpp/cmake/..
 
+/home/bruktawit/arm_ws_fin/devel/include/arm_gazebo/FK.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/bruktawit/arm_ws_fin/devel/include/arm_gazebo/FK.h: /home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/FK.srv
+/home/bruktawit/arm_ws_fin/devel/include/arm_gazebo/FK.h: /opt/ros/noetic/share/gencpp/msg.h.template
+/home/bruktawit/arm_ws_fin/devel/include/arm_gazebo/FK.h: /opt/ros/noetic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bruktawit/arm_ws_fin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating C++ code from arm_gazebo/FK.srv"
+	cd /home/bruktawit/arm_ws_fin/src/arm_gazebo && /home/bruktawit/arm_ws_fin/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/FK.srv -Iarm_gazebo:/home/bruktawit/arm_ws_fin/src/arm_gazebo/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p arm_gazebo -o /home/bruktawit/arm_ws_fin/devel/include/arm_gazebo -e /opt/ros/noetic/share/gencpp/cmake/..
+
+/home/bruktawit/arm_ws_fin/devel/include/arm_gazebo/IK.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/bruktawit/arm_ws_fin/devel/include/arm_gazebo/IK.h: /home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/IK.srv
+/home/bruktawit/arm_ws_fin/devel/include/arm_gazebo/IK.h: /opt/ros/noetic/share/gencpp/msg.h.template
+/home/bruktawit/arm_ws_fin/devel/include/arm_gazebo/IK.h: /opt/ros/noetic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bruktawit/arm_ws_fin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating C++ code from arm_gazebo/IK.srv"
+	cd /home/bruktawit/arm_ws_fin/src/arm_gazebo && /home/bruktawit/arm_ws_fin/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/IK.srv -Iarm_gazebo:/home/bruktawit/arm_ws_fin/src/arm_gazebo/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p arm_gazebo -o /home/bruktawit/arm_ws_fin/devel/include/arm_gazebo -e /opt/ros/noetic/share/gencpp/cmake/..
+
 arm_gazebo_generate_messages_cpp: arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_cpp
 arm_gazebo_generate_messages_cpp: /home/bruktawit/arm_ws_fin/devel/include/arm_gazebo/joint_angles.h
 arm_gazebo_generate_messages_cpp: /home/bruktawit/arm_ws_fin/devel/include/arm_gazebo/vector.h
+arm_gazebo_generate_messages_cpp: /home/bruktawit/arm_ws_fin/devel/include/arm_gazebo/FK.h
+arm_gazebo_generate_messages_cpp: /home/bruktawit/arm_ws_fin/devel/include/arm_gazebo/IK.h
 arm_gazebo_generate_messages_cpp: arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_cpp.dir/build.make
 
 .PHONY : arm_gazebo_generate_messages_cpp

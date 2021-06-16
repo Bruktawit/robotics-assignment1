@@ -55,6 +55,8 @@ include arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_lisp.dir/progress.mak
 
 arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_lisp: /home/bruktawit/arm_ws_fin/devel/share/common-lisp/ros/arm_gazebo/msg/joint_angles.lisp
 arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_lisp: /home/bruktawit/arm_ws_fin/devel/share/common-lisp/ros/arm_gazebo/msg/vector.lisp
+arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_lisp: /home/bruktawit/arm_ws_fin/devel/share/common-lisp/ros/arm_gazebo/srv/FK.lisp
+arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_lisp: /home/bruktawit/arm_ws_fin/devel/share/common-lisp/ros/arm_gazebo/srv/IK.lisp
 
 
 /home/bruktawit/arm_ws_fin/devel/share/common-lisp/ros/arm_gazebo/msg/joint_angles.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
@@ -67,9 +69,21 @@ arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_lisp: /home/bruktawit/arm_ws_
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bruktawit/arm_ws_fin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Lisp code from arm_gazebo/vector.msg"
 	cd /home/bruktawit/arm_ws_fin/build/arm_gazebo && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/bruktawit/arm_ws_fin/src/arm_gazebo/msg/vector.msg -Iarm_gazebo:/home/bruktawit/arm_ws_fin/src/arm_gazebo/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p arm_gazebo -o /home/bruktawit/arm_ws_fin/devel/share/common-lisp/ros/arm_gazebo/msg
 
+/home/bruktawit/arm_ws_fin/devel/share/common-lisp/ros/arm_gazebo/srv/FK.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+/home/bruktawit/arm_ws_fin/devel/share/common-lisp/ros/arm_gazebo/srv/FK.lisp: /home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/FK.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bruktawit/arm_ws_fin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Lisp code from arm_gazebo/FK.srv"
+	cd /home/bruktawit/arm_ws_fin/build/arm_gazebo && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/FK.srv -Iarm_gazebo:/home/bruktawit/arm_ws_fin/src/arm_gazebo/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p arm_gazebo -o /home/bruktawit/arm_ws_fin/devel/share/common-lisp/ros/arm_gazebo/srv
+
+/home/bruktawit/arm_ws_fin/devel/share/common-lisp/ros/arm_gazebo/srv/IK.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+/home/bruktawit/arm_ws_fin/devel/share/common-lisp/ros/arm_gazebo/srv/IK.lisp: /home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/IK.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bruktawit/arm_ws_fin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Lisp code from arm_gazebo/IK.srv"
+	cd /home/bruktawit/arm_ws_fin/build/arm_gazebo && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/IK.srv -Iarm_gazebo:/home/bruktawit/arm_ws_fin/src/arm_gazebo/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p arm_gazebo -o /home/bruktawit/arm_ws_fin/devel/share/common-lisp/ros/arm_gazebo/srv
+
 arm_gazebo_generate_messages_lisp: arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_lisp
 arm_gazebo_generate_messages_lisp: /home/bruktawit/arm_ws_fin/devel/share/common-lisp/ros/arm_gazebo/msg/joint_angles.lisp
 arm_gazebo_generate_messages_lisp: /home/bruktawit/arm_ws_fin/devel/share/common-lisp/ros/arm_gazebo/msg/vector.lisp
+arm_gazebo_generate_messages_lisp: /home/bruktawit/arm_ws_fin/devel/share/common-lisp/ros/arm_gazebo/srv/FK.lisp
+arm_gazebo_generate_messages_lisp: /home/bruktawit/arm_ws_fin/devel/share/common-lisp/ros/arm_gazebo/srv/IK.lisp
 arm_gazebo_generate_messages_lisp: arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_lisp.dir/build.make
 
 .PHONY : arm_gazebo_generate_messages_lisp

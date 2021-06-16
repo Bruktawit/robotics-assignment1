@@ -1,7 +1,7 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
 messages_str = "/home/bruktawit/arm_ws_fin/src/arm_gazebo/msg/joint_angles.msg;/home/bruktawit/arm_ws_fin/src/arm_gazebo/msg/vector.msg"
-services_str = ""
+services_str = "/home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/FK.srv;/home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/IK.srv"
 pkg_name = "arm_gazebo"
 dependencies_str = "std_msgs"
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"

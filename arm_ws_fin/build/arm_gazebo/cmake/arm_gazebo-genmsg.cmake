@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "arm_gazebo: 2 messages, 0 services")
+message(STATUS "arm_gazebo: 2 messages, 2 services")
 
 set(MSG_I_FLAGS "-Iarm_gazebo:/home/bruktawit/arm_ws_fin/src/arm_gazebo/msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg")
 
@@ -27,6 +27,16 @@ add_custom_target(_arm_gazebo_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "arm_gazebo" "/home/bruktawit/arm_ws_fin/src/arm_gazebo/msg/vector.msg" ""
 )
 
+get_filename_component(_filename "/home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/FK.srv" NAME_WE)
+add_custom_target(_arm_gazebo_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "arm_gazebo" "/home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/FK.srv" ""
+)
+
+get_filename_component(_filename "/home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/IK.srv" NAME_WE)
+add_custom_target(_arm_gazebo_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "arm_gazebo" "/home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/IK.srv" ""
+)
+
 #
 #  langs = gencpp;geneus;genlisp;gennodejs;genpy
 #
@@ -47,6 +57,18 @@ _generate_msg_cpp(arm_gazebo
 )
 
 ### Generating Services
+_generate_srv_cpp(arm_gazebo
+  "/home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/FK.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/arm_gazebo
+)
+_generate_srv_cpp(arm_gazebo
+  "/home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/IK.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/arm_gazebo
+)
 
 ### Generating Module File
 _generate_module_cpp(arm_gazebo
@@ -63,6 +85,10 @@ add_dependencies(arm_gazebo_generate_messages arm_gazebo_generate_messages_cpp)
 get_filename_component(_filename "/home/bruktawit/arm_ws_fin/src/arm_gazebo/msg/joint_angles.msg" NAME_WE)
 add_dependencies(arm_gazebo_generate_messages_cpp _arm_gazebo_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/bruktawit/arm_ws_fin/src/arm_gazebo/msg/vector.msg" NAME_WE)
+add_dependencies(arm_gazebo_generate_messages_cpp _arm_gazebo_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/FK.srv" NAME_WE)
+add_dependencies(arm_gazebo_generate_messages_cpp _arm_gazebo_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/IK.srv" NAME_WE)
 add_dependencies(arm_gazebo_generate_messages_cpp _arm_gazebo_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -88,6 +114,18 @@ _generate_msg_eus(arm_gazebo
 )
 
 ### Generating Services
+_generate_srv_eus(arm_gazebo
+  "/home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/FK.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/arm_gazebo
+)
+_generate_srv_eus(arm_gazebo
+  "/home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/IK.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/arm_gazebo
+)
 
 ### Generating Module File
 _generate_module_eus(arm_gazebo
@@ -104,6 +142,10 @@ add_dependencies(arm_gazebo_generate_messages arm_gazebo_generate_messages_eus)
 get_filename_component(_filename "/home/bruktawit/arm_ws_fin/src/arm_gazebo/msg/joint_angles.msg" NAME_WE)
 add_dependencies(arm_gazebo_generate_messages_eus _arm_gazebo_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/bruktawit/arm_ws_fin/src/arm_gazebo/msg/vector.msg" NAME_WE)
+add_dependencies(arm_gazebo_generate_messages_eus _arm_gazebo_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/FK.srv" NAME_WE)
+add_dependencies(arm_gazebo_generate_messages_eus _arm_gazebo_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/IK.srv" NAME_WE)
 add_dependencies(arm_gazebo_generate_messages_eus _arm_gazebo_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -129,6 +171,18 @@ _generate_msg_lisp(arm_gazebo
 )
 
 ### Generating Services
+_generate_srv_lisp(arm_gazebo
+  "/home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/FK.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/arm_gazebo
+)
+_generate_srv_lisp(arm_gazebo
+  "/home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/IK.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/arm_gazebo
+)
 
 ### Generating Module File
 _generate_module_lisp(arm_gazebo
@@ -145,6 +199,10 @@ add_dependencies(arm_gazebo_generate_messages arm_gazebo_generate_messages_lisp)
 get_filename_component(_filename "/home/bruktawit/arm_ws_fin/src/arm_gazebo/msg/joint_angles.msg" NAME_WE)
 add_dependencies(arm_gazebo_generate_messages_lisp _arm_gazebo_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/bruktawit/arm_ws_fin/src/arm_gazebo/msg/vector.msg" NAME_WE)
+add_dependencies(arm_gazebo_generate_messages_lisp _arm_gazebo_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/FK.srv" NAME_WE)
+add_dependencies(arm_gazebo_generate_messages_lisp _arm_gazebo_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/IK.srv" NAME_WE)
 add_dependencies(arm_gazebo_generate_messages_lisp _arm_gazebo_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -170,6 +228,18 @@ _generate_msg_nodejs(arm_gazebo
 )
 
 ### Generating Services
+_generate_srv_nodejs(arm_gazebo
+  "/home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/FK.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/arm_gazebo
+)
+_generate_srv_nodejs(arm_gazebo
+  "/home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/IK.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/arm_gazebo
+)
 
 ### Generating Module File
 _generate_module_nodejs(arm_gazebo
@@ -186,6 +256,10 @@ add_dependencies(arm_gazebo_generate_messages arm_gazebo_generate_messages_nodej
 get_filename_component(_filename "/home/bruktawit/arm_ws_fin/src/arm_gazebo/msg/joint_angles.msg" NAME_WE)
 add_dependencies(arm_gazebo_generate_messages_nodejs _arm_gazebo_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/bruktawit/arm_ws_fin/src/arm_gazebo/msg/vector.msg" NAME_WE)
+add_dependencies(arm_gazebo_generate_messages_nodejs _arm_gazebo_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/FK.srv" NAME_WE)
+add_dependencies(arm_gazebo_generate_messages_nodejs _arm_gazebo_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/IK.srv" NAME_WE)
 add_dependencies(arm_gazebo_generate_messages_nodejs _arm_gazebo_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -211,6 +285,18 @@ _generate_msg_py(arm_gazebo
 )
 
 ### Generating Services
+_generate_srv_py(arm_gazebo
+  "/home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/FK.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/arm_gazebo
+)
+_generate_srv_py(arm_gazebo
+  "/home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/IK.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/arm_gazebo
+)
 
 ### Generating Module File
 _generate_module_py(arm_gazebo
@@ -227,6 +313,10 @@ add_dependencies(arm_gazebo_generate_messages arm_gazebo_generate_messages_py)
 get_filename_component(_filename "/home/bruktawit/arm_ws_fin/src/arm_gazebo/msg/joint_angles.msg" NAME_WE)
 add_dependencies(arm_gazebo_generate_messages_py _arm_gazebo_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/bruktawit/arm_ws_fin/src/arm_gazebo/msg/vector.msg" NAME_WE)
+add_dependencies(arm_gazebo_generate_messages_py _arm_gazebo_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/FK.srv" NAME_WE)
+add_dependencies(arm_gazebo_generate_messages_py _arm_gazebo_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/IK.srv" NAME_WE)
 add_dependencies(arm_gazebo_generate_messages_py _arm_gazebo_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

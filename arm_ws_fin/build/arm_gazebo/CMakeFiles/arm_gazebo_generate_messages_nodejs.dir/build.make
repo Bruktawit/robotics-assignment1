@@ -55,6 +55,8 @@ include arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_nodejs.dir/progress.m
 
 arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_nodejs: /home/bruktawit/arm_ws_fin/devel/share/gennodejs/ros/arm_gazebo/msg/joint_angles.js
 arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_nodejs: /home/bruktawit/arm_ws_fin/devel/share/gennodejs/ros/arm_gazebo/msg/vector.js
+arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_nodejs: /home/bruktawit/arm_ws_fin/devel/share/gennodejs/ros/arm_gazebo/srv/FK.js
+arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_nodejs: /home/bruktawit/arm_ws_fin/devel/share/gennodejs/ros/arm_gazebo/srv/IK.js
 
 
 /home/bruktawit/arm_ws_fin/devel/share/gennodejs/ros/arm_gazebo/msg/joint_angles.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
@@ -67,9 +69,21 @@ arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_nodejs: /home/bruktawit/arm_w
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bruktawit/arm_ws_fin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from arm_gazebo/vector.msg"
 	cd /home/bruktawit/arm_ws_fin/build/arm_gazebo && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/bruktawit/arm_ws_fin/src/arm_gazebo/msg/vector.msg -Iarm_gazebo:/home/bruktawit/arm_ws_fin/src/arm_gazebo/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p arm_gazebo -o /home/bruktawit/arm_ws_fin/devel/share/gennodejs/ros/arm_gazebo/msg
 
+/home/bruktawit/arm_ws_fin/devel/share/gennodejs/ros/arm_gazebo/srv/FK.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
+/home/bruktawit/arm_ws_fin/devel/share/gennodejs/ros/arm_gazebo/srv/FK.js: /home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/FK.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bruktawit/arm_ws_fin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Javascript code from arm_gazebo/FK.srv"
+	cd /home/bruktawit/arm_ws_fin/build/arm_gazebo && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/FK.srv -Iarm_gazebo:/home/bruktawit/arm_ws_fin/src/arm_gazebo/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p arm_gazebo -o /home/bruktawit/arm_ws_fin/devel/share/gennodejs/ros/arm_gazebo/srv
+
+/home/bruktawit/arm_ws_fin/devel/share/gennodejs/ros/arm_gazebo/srv/IK.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
+/home/bruktawit/arm_ws_fin/devel/share/gennodejs/ros/arm_gazebo/srv/IK.js: /home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/IK.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bruktawit/arm_ws_fin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Javascript code from arm_gazebo/IK.srv"
+	cd /home/bruktawit/arm_ws_fin/build/arm_gazebo && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/IK.srv -Iarm_gazebo:/home/bruktawit/arm_ws_fin/src/arm_gazebo/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p arm_gazebo -o /home/bruktawit/arm_ws_fin/devel/share/gennodejs/ros/arm_gazebo/srv
+
 arm_gazebo_generate_messages_nodejs: arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_nodejs
 arm_gazebo_generate_messages_nodejs: /home/bruktawit/arm_ws_fin/devel/share/gennodejs/ros/arm_gazebo/msg/joint_angles.js
 arm_gazebo_generate_messages_nodejs: /home/bruktawit/arm_ws_fin/devel/share/gennodejs/ros/arm_gazebo/msg/vector.js
+arm_gazebo_generate_messages_nodejs: /home/bruktawit/arm_ws_fin/devel/share/gennodejs/ros/arm_gazebo/srv/FK.js
+arm_gazebo_generate_messages_nodejs: /home/bruktawit/arm_ws_fin/devel/share/gennodejs/ros/arm_gazebo/srv/IK.js
 arm_gazebo_generate_messages_nodejs: arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_nodejs.dir/build.make
 
 .PHONY : arm_gazebo_generate_messages_nodejs

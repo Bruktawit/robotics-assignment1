@@ -55,7 +55,10 @@ include arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_py.dir/progress.make
 
 arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_py: /home/bruktawit/arm_ws_fin/devel/lib/python3/dist-packages/arm_gazebo/msg/_joint_angles.py
 arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_py: /home/bruktawit/arm_ws_fin/devel/lib/python3/dist-packages/arm_gazebo/msg/_vector.py
+arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_py: /home/bruktawit/arm_ws_fin/devel/lib/python3/dist-packages/arm_gazebo/srv/_FK.py
+arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_py: /home/bruktawit/arm_ws_fin/devel/lib/python3/dist-packages/arm_gazebo/srv/_IK.py
 arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_py: /home/bruktawit/arm_ws_fin/devel/lib/python3/dist-packages/arm_gazebo/msg/__init__.py
+arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_py: /home/bruktawit/arm_ws_fin/devel/lib/python3/dist-packages/arm_gazebo/srv/__init__.py
 
 
 /home/bruktawit/arm_ws_fin/devel/lib/python3/dist-packages/arm_gazebo/msg/_joint_angles.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
@@ -68,16 +71,39 @@ arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_py: /home/bruktawit/arm_ws_fi
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bruktawit/arm_ws_fin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG arm_gazebo/vector"
 	cd /home/bruktawit/arm_ws_fin/build/arm_gazebo && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/bruktawit/arm_ws_fin/src/arm_gazebo/msg/vector.msg -Iarm_gazebo:/home/bruktawit/arm_ws_fin/src/arm_gazebo/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p arm_gazebo -o /home/bruktawit/arm_ws_fin/devel/lib/python3/dist-packages/arm_gazebo/msg
 
+/home/bruktawit/arm_ws_fin/devel/lib/python3/dist-packages/arm_gazebo/srv/_FK.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/bruktawit/arm_ws_fin/devel/lib/python3/dist-packages/arm_gazebo/srv/_FK.py: /home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/FK.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bruktawit/arm_ws_fin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python code from SRV arm_gazebo/FK"
+	cd /home/bruktawit/arm_ws_fin/build/arm_gazebo && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/FK.srv -Iarm_gazebo:/home/bruktawit/arm_ws_fin/src/arm_gazebo/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p arm_gazebo -o /home/bruktawit/arm_ws_fin/devel/lib/python3/dist-packages/arm_gazebo/srv
+
+/home/bruktawit/arm_ws_fin/devel/lib/python3/dist-packages/arm_gazebo/srv/_IK.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/bruktawit/arm_ws_fin/devel/lib/python3/dist-packages/arm_gazebo/srv/_IK.py: /home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/IK.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bruktawit/arm_ws_fin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python code from SRV arm_gazebo/IK"
+	cd /home/bruktawit/arm_ws_fin/build/arm_gazebo && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/IK.srv -Iarm_gazebo:/home/bruktawit/arm_ws_fin/src/arm_gazebo/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p arm_gazebo -o /home/bruktawit/arm_ws_fin/devel/lib/python3/dist-packages/arm_gazebo/srv
+
 /home/bruktawit/arm_ws_fin/devel/lib/python3/dist-packages/arm_gazebo/msg/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /home/bruktawit/arm_ws_fin/devel/lib/python3/dist-packages/arm_gazebo/msg/__init__.py: /home/bruktawit/arm_ws_fin/devel/lib/python3/dist-packages/arm_gazebo/msg/_joint_angles.py
 /home/bruktawit/arm_ws_fin/devel/lib/python3/dist-packages/arm_gazebo/msg/__init__.py: /home/bruktawit/arm_ws_fin/devel/lib/python3/dist-packages/arm_gazebo/msg/_vector.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bruktawit/arm_ws_fin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python msg __init__.py for arm_gazebo"
+/home/bruktawit/arm_ws_fin/devel/lib/python3/dist-packages/arm_gazebo/msg/__init__.py: /home/bruktawit/arm_ws_fin/devel/lib/python3/dist-packages/arm_gazebo/srv/_FK.py
+/home/bruktawit/arm_ws_fin/devel/lib/python3/dist-packages/arm_gazebo/msg/__init__.py: /home/bruktawit/arm_ws_fin/devel/lib/python3/dist-packages/arm_gazebo/srv/_IK.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bruktawit/arm_ws_fin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Python msg __init__.py for arm_gazebo"
 	cd /home/bruktawit/arm_ws_fin/build/arm_gazebo && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/bruktawit/arm_ws_fin/devel/lib/python3/dist-packages/arm_gazebo/msg --initpy
+
+/home/bruktawit/arm_ws_fin/devel/lib/python3/dist-packages/arm_gazebo/srv/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/bruktawit/arm_ws_fin/devel/lib/python3/dist-packages/arm_gazebo/srv/__init__.py: /home/bruktawit/arm_ws_fin/devel/lib/python3/dist-packages/arm_gazebo/msg/_joint_angles.py
+/home/bruktawit/arm_ws_fin/devel/lib/python3/dist-packages/arm_gazebo/srv/__init__.py: /home/bruktawit/arm_ws_fin/devel/lib/python3/dist-packages/arm_gazebo/msg/_vector.py
+/home/bruktawit/arm_ws_fin/devel/lib/python3/dist-packages/arm_gazebo/srv/__init__.py: /home/bruktawit/arm_ws_fin/devel/lib/python3/dist-packages/arm_gazebo/srv/_FK.py
+/home/bruktawit/arm_ws_fin/devel/lib/python3/dist-packages/arm_gazebo/srv/__init__.py: /home/bruktawit/arm_ws_fin/devel/lib/python3/dist-packages/arm_gazebo/srv/_IK.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bruktawit/arm_ws_fin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Python srv __init__.py for arm_gazebo"
+	cd /home/bruktawit/arm_ws_fin/build/arm_gazebo && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/bruktawit/arm_ws_fin/devel/lib/python3/dist-packages/arm_gazebo/srv --initpy
 
 arm_gazebo_generate_messages_py: arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_py
 arm_gazebo_generate_messages_py: /home/bruktawit/arm_ws_fin/devel/lib/python3/dist-packages/arm_gazebo/msg/_joint_angles.py
 arm_gazebo_generate_messages_py: /home/bruktawit/arm_ws_fin/devel/lib/python3/dist-packages/arm_gazebo/msg/_vector.py
+arm_gazebo_generate_messages_py: /home/bruktawit/arm_ws_fin/devel/lib/python3/dist-packages/arm_gazebo/srv/_FK.py
+arm_gazebo_generate_messages_py: /home/bruktawit/arm_ws_fin/devel/lib/python3/dist-packages/arm_gazebo/srv/_IK.py
 arm_gazebo_generate_messages_py: /home/bruktawit/arm_ws_fin/devel/lib/python3/dist-packages/arm_gazebo/msg/__init__.py
+arm_gazebo_generate_messages_py: /home/bruktawit/arm_ws_fin/devel/lib/python3/dist-packages/arm_gazebo/srv/__init__.py
 arm_gazebo_generate_messages_py: arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_py.dir/build.make
 
 .PHONY : arm_gazebo_generate_messages_py

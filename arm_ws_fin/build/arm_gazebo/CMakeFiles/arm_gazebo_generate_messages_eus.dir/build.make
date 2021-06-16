@@ -55,6 +55,8 @@ include arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_eus.dir/progress.make
 
 arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_eus: /home/bruktawit/arm_ws_fin/devel/share/roseus/ros/arm_gazebo/msg/joint_angles.l
 arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_eus: /home/bruktawit/arm_ws_fin/devel/share/roseus/ros/arm_gazebo/msg/vector.l
+arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_eus: /home/bruktawit/arm_ws_fin/devel/share/roseus/ros/arm_gazebo/srv/FK.l
+arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_eus: /home/bruktawit/arm_ws_fin/devel/share/roseus/ros/arm_gazebo/srv/IK.l
 arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_eus: /home/bruktawit/arm_ws_fin/devel/share/roseus/ros/arm_gazebo/manifest.l
 
 
@@ -68,13 +70,25 @@ arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_eus: /home/bruktawit/arm_ws_f
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bruktawit/arm_ws_fin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from arm_gazebo/vector.msg"
 	cd /home/bruktawit/arm_ws_fin/build/arm_gazebo && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/bruktawit/arm_ws_fin/src/arm_gazebo/msg/vector.msg -Iarm_gazebo:/home/bruktawit/arm_ws_fin/src/arm_gazebo/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p arm_gazebo -o /home/bruktawit/arm_ws_fin/devel/share/roseus/ros/arm_gazebo/msg
 
+/home/bruktawit/arm_ws_fin/devel/share/roseus/ros/arm_gazebo/srv/FK.l: /opt/ros/noetic/lib/geneus/gen_eus.py
+/home/bruktawit/arm_ws_fin/devel/share/roseus/ros/arm_gazebo/srv/FK.l: /home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/FK.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bruktawit/arm_ws_fin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp code from arm_gazebo/FK.srv"
+	cd /home/bruktawit/arm_ws_fin/build/arm_gazebo && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/FK.srv -Iarm_gazebo:/home/bruktawit/arm_ws_fin/src/arm_gazebo/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p arm_gazebo -o /home/bruktawit/arm_ws_fin/devel/share/roseus/ros/arm_gazebo/srv
+
+/home/bruktawit/arm_ws_fin/devel/share/roseus/ros/arm_gazebo/srv/IK.l: /opt/ros/noetic/lib/geneus/gen_eus.py
+/home/bruktawit/arm_ws_fin/devel/share/roseus/ros/arm_gazebo/srv/IK.l: /home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/IK.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bruktawit/arm_ws_fin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating EusLisp code from arm_gazebo/IK.srv"
+	cd /home/bruktawit/arm_ws_fin/build/arm_gazebo && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/IK.srv -Iarm_gazebo:/home/bruktawit/arm_ws_fin/src/arm_gazebo/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p arm_gazebo -o /home/bruktawit/arm_ws_fin/devel/share/roseus/ros/arm_gazebo/srv
+
 /home/bruktawit/arm_ws_fin/devel/share/roseus/ros/arm_gazebo/manifest.l: /opt/ros/noetic/lib/geneus/gen_eus.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bruktawit/arm_ws_fin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp manifest code for arm_gazebo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bruktawit/arm_ws_fin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating EusLisp manifest code for arm_gazebo"
 	cd /home/bruktawit/arm_ws_fin/build/arm_gazebo && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/bruktawit/arm_ws_fin/devel/share/roseus/ros/arm_gazebo arm_gazebo std_msgs
 
 arm_gazebo_generate_messages_eus: arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_eus
 arm_gazebo_generate_messages_eus: /home/bruktawit/arm_ws_fin/devel/share/roseus/ros/arm_gazebo/msg/joint_angles.l
 arm_gazebo_generate_messages_eus: /home/bruktawit/arm_ws_fin/devel/share/roseus/ros/arm_gazebo/msg/vector.l
+arm_gazebo_generate_messages_eus: /home/bruktawit/arm_ws_fin/devel/share/roseus/ros/arm_gazebo/srv/FK.l
+arm_gazebo_generate_messages_eus: /home/bruktawit/arm_ws_fin/devel/share/roseus/ros/arm_gazebo/srv/IK.l
 arm_gazebo_generate_messages_eus: /home/bruktawit/arm_ws_fin/devel/share/roseus/ros/arm_gazebo/manifest.l
 arm_gazebo_generate_messages_eus: arm_gazebo/CMakeFiles/arm_gazebo_generate_messages_eus.dir/build.make
 

@@ -7,10 +7,47 @@
 
 #include "ros/ros.h"
 #include "arm_gazebo/joint_angles.h"
+
+#include "arm_gazebo/FK.h"
+#include "arm_gazebo/IK.h"
+#include "arm_gazebo/vector.h"
+
+
 namespace gazebo
 {
 	class ModelPush : public ModelPlugin
 	{
+
+		public:
+		void positionsVal(const arm_gazebo::vector &value)
+		{
+			
+			arm_gazebo::IK srv;
+			srv.request.link_lengths = {0.05, 2, 1, 0.5, 0.1, 0.1};
+			srv.request.joint_angles = {0, 0, 0, 0, 0, 0};
+			srv.request.positions = {value.x, value.y, value.z};
+
+			for (int i = 0; i < joints.size() - 4; i++)
+			{
+				srv.request.joint_angles[i] = physics::JointState(joints[i]).Position(0);
+			}
+
+			if (ik_client.call(srv))
+			{				
+				ROS_INFO("IK: [%f, %f, %f, %f, %f, %f]", srv.response.target_positions[0], srv.response.target_positions[1], srv.response.target_positions[2], srv.response.target_positions[3], srv.response.target_positions[4], srv.response.target_positions[5]);
+
+				for (int i = 0; i < joints.size() - 4; i++)
+				{
+					jointController->SetPositionTarget(joints[i]->GetScopedName(), srv.response.target_positions[i]);
+				}
+			}
+			else
+			{
+				ROS_ERROR("Failed to call service IK");
+			}
+		}
+
+
 	public:
 			void anglesAssign(const arm_gazebo::joint_angles angles)
 		{
@@ -32,18 +69,29 @@ namespace gazebo
 		{
 			// Store the pointer to the model
 			this->model = _parent;
-
+			
+            this->joints = model->GetJoints();
 			// // intiantiate the joint controller
 			this->jointController = this->model->GetJointController();
 
 			// // set your PID values
 			this->pid = common::PID(30.1, 10.01, 10.03);
 
+			for (int i = 0; i < joints.size() - 4; i++)
+			{
+				jointController->SetPositionTarget(joints[i]->GetScopedName(), 0);
+				
+			}
+
 			auto joint_name = "arm1_arm2_joint";
 
 			std::string name = this->model->GetJoint("arm1_arm2_joint")->GetScopedName();
 
 			this->jointController->SetPositionPID(name, pid);
+
+			jointController->SetPositionTarget(model->GetJoint("arm1_arm2_joint")->GetScopedName(), -0.2);
+			jointController->SetPositionTarget(model->GetJoint("arm6_arm7_joint")->GetScopedName(), -0.5);
+			jointController->SetPositionTarget(model->GetJoint("arm6_arm8_joint")->GetScopedName(), 0.5);
 
 			// Listen to the update event. This event is broadcast every
 			// simulation iteration.
@@ -55,9 +103,31 @@ namespace gazebo
 			ros::init(argc, argv, "controller");
 			pub = n.advertise<arm_gazebo::joint_angles>("print_angles",100);
 			sub = n.subscribe("joint_position", 1000, &ModelPush::anglesAssign, this);
+			
+			positionsSub = n.subscribe("/vectorPositions", 1000, &ModelPush::positionsVal, this);
+			
+			fk_client = n.serviceClient<arm_gazebo::FK>("fk");
+			ik_client = n.serviceClient<arm_gazebo::IK>("ik");
 			ros::spinOnce();
 						
 		}
+
+	void forward_kinematics(double a1, double a2, double a3, double a4, double a5, double a6)
+		{
+			arm_gazebo::FK srv;
+			srv.request.link_lengths = {0.05, 2, 1, 0.5, 0.1, 0.1};
+			srv.request.joint_angles = {a1, a2, a3, a4, a5, a6};
+
+			if (fk_client.call(srv))
+			{
+				ROS_INFO("FK: [%f, %f, %f]", srv.response.actuator_pose[0], srv.response.actuator_pose[1], srv.response.actuator_pose[2]);
+			}
+			else
+			{
+				ROS_ERROR("Failed to call service fk");
+			}
+		}
+
 
 	public:
 		void assignTheAngles(){
@@ -84,7 +154,9 @@ namespace gazebo
 			double a2 = physics::JointState(this->model->GetJoint("arm1_arm2_joint")).Position(0);
 			double a3 = physics::JointState(this->model->GetJoint("arm2_arm3_joint")).Position(0);
 			double a4 = physics::JointState(this->model->GetJoint("arm3_arm4_joint")).Position(0);
-			
+			double a5 = physics::JointState(this->model->GetJoint("arm4_arm5_joint")).Position(0);
+			double a6 = physics::JointState(this->model->GetJoint("arm5_arm6_joint")).Position(0);
+
 			arm_gazebo::joint_angles angles;
 
 			angles.joint1 = a1;
@@ -93,6 +165,9 @@ namespace gazebo
     		angles.joint4 = a4;
     
     		this->pub.publish(angles);
+
+			forward_kinematics(a1, a2, a3, a4, a5, a6);
+
 			ros::spinOnce();
 			// double a2 = this->model->GetJoint("chasis_arm1_joint").Position(0);
 			// double a3 = physics::JointState(this->model->GetJoint("chasis_arm1_joint")).Position(2);
@@ -111,7 +186,7 @@ namespace gazebo
 		// 	//  or sets position of the angles
 	private:
 		physics::JointControllerPtr jointController;
-
+        physics::Joint_V joints;
 	private:
 		event::ConnectionPtr updateConnection;
 
@@ -123,7 +198,9 @@ namespace gazebo
 		ros::Publisher pub;
 		ros::NodeHandle n;
 		ros::Subscriber sub;
-
+		ros::Subscriber positionsSub;
+		ros::ServiceClient fk_client;
+		ros::ServiceClient ik_client;
 	};
 
 	// Register this plugin with the simulator

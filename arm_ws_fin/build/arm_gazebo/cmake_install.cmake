@@ -45,6 +45,13 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/arm_gazebo/srv" TYPE FILE FILES
+    "/home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/FK.srv"
+    "/home/bruktawit/arm_ws_fin/src/arm_gazebo/srv/IK.srv"
+    )
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/arm_gazebo/cmake" TYPE FILE FILES "/home/bruktawit/arm_ws_fin/build/arm_gazebo/catkin_generated/installspace/arm_gazebo-msg-paths.cmake")
 endif()
 
