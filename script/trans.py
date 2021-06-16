@@ -1,4 +1,5 @@
 import numpy as np
+import tinyik as ik
 def Rx(r):
      return np.array(
        [1 , 0,0,0],
@@ -48,3 +49,12 @@ print(M)
 #        [0 , 0,0,1])
 # R=M1.dot(M2)
 # print(R)
+
+arm=ik.Actuator([
+    'z',[0,0,.15],
+    'x',[0,0,2.0],
+    'x',[0,0,1.0],
+    'x',[0,0,1.0],
+])
+arm.ee=[1.0,1.0,1.0]
+print(arm.angels)
